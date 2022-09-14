@@ -6,3 +6,8 @@ class User:
         self.seat_num = seat_num
         self.overdraft = overdraft
         self.token_bal = balance
+
+
+testUser = User(5, "emma", "c", "5", "yes", 5)
+
+print(testUser.acc_num)
