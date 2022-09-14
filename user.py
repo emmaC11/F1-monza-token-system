@@ -7,6 +7,14 @@ class User:
         self.overdraft = overdraft
         self.token_bal = balance
 
+    def __repr__(self):
+        repr = (f"{str(self.acc_num).ljust(10)} {self.f_name.ljust(15)}")
+        repr = repr + (f"{self.seat_num.ljust(15)} {self.l_name.ljust(15)}")
+        repr = repr + (f"{self.overdraft.ljust(10)} {self.token_bal:.2f}")
+        return repr
 
-# testUser = User(5, "emma", "c", "5", "yes", 5)
-# print(testUser.acc_num)
+
+testUser = User(5, "emma", "c", "5", "yes", 5)
+print(testUser)
+
+
