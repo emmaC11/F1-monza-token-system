@@ -8,6 +8,5 @@ class User:
         self.token_bal = balance
 
 
-testUser = User(5, "emma", "c", "5", "yes", 5)
-
-print(testUser.acc_num)
+# testUser = User(5, "emma", "c", "5", "yes", 5)
+# print(testUser.acc_num)
