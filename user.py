@@ -13,8 +13,18 @@ class User:
         repr = repr + (f"{self.overdraft.ljust(20)} {self.token_bal:.2f}")
         return repr
 
+    @property
+    def acc_num(self):
+        print("getting value")
+        return self._acc_num
+
+    @acc_num.setter
+    def acc_num(self, value):
+        print("setting value")
+        self._acc_num = value
+
 
 testUser = User(5, "emma", "c", "5", "yes", 5)
-print(testUser)
+print(testUser.acc_num)
 
 
