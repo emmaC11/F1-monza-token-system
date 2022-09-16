@@ -33,6 +33,16 @@ class User:
         print("setting value")
         self._f_name = value
 
+    @property
+    def l_name(self):
+        print("getting value")
+        return self._l_name
+
+    @l_name.setter
+    def l_name(self, value):
+        print("setting value")
+        self._l_name = value
+
 
 testUser = User(5, "emma", "c", "5", "yes", 5)
 print(testUser.acc_num)
