@@ -53,6 +53,16 @@ class User:
         print("setting value")
         self._seat_num = value
 
+    @property
+    def overdraft(self):
+        print("getting value")
+        return self._overdraft
+
+    @overdraft.setter
+    def overdraft(self, value):
+        print("setting value")
+        self._overdraft = value
+
 
 testUser = User(5, "emma", "c", "5", "yes", 5)
 print(testUser.acc_num)
