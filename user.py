@@ -43,6 +43,16 @@ class User:
         print("setting value")
         self._l_name = value
 
+    @property
+    def seat_num(self):
+        print("getting value")
+        return self._seat_num
+
+    @seat_num.setter
+    def seat_num(self, value):
+        print("setting value")
+        self._seat_num = value
+
 
 testUser = User(5, "emma", "c", "5", "yes", 5)
 print(testUser.acc_num)
