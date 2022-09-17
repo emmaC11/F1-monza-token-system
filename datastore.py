@@ -7,3 +7,7 @@ class Datastore:
     def __init__(self):
         self._users = []
         self.read_users()
+
+    def read_users(self):
+        file_parser = FileParser()
+        self._users = file_parser.read_users(users.txt)
