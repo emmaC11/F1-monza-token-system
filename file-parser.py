@@ -10,7 +10,7 @@ class FileParser:
         users = []
 
         try:
-            file = open(filename, "r")
+            file = open(filename, "r", encoding="utf-8")
 
             # file content stored in a list of strings
             lines = file.readlines()
@@ -48,7 +48,7 @@ class FileParser:
         lines = []
 
         try:
-            file = open(filename, "w")
+            file = open(filename, "w", encoding="utf-8")
             file.writelines(lines)
             file.close()
 
