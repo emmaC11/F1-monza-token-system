@@ -74,7 +74,7 @@ class User:
         self._balance = value
 
 
-testUser = User(5, "emma", "c", "5", "yes", 5)
-print(testUser.acc_num)
+# testUser = User(5, "emma", "c", "5", "yes", 5)
+# print(testUser.acc_num)
 
 
