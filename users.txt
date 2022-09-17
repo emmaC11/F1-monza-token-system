@@ -1,0 +1,2 @@
+1|Carlos|Sainz|5A|no|5
+2|Charles|Leclerc|2B|yes|10
