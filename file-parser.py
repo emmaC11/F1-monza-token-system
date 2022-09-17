@@ -1,6 +1,7 @@
 from user import User
 
-class FileParser():
+
+class FileParser:
 
     def read_users(self, filename):
         users = []
