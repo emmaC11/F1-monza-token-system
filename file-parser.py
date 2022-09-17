@@ -24,8 +24,16 @@ class File_Parser():
 
         return users
 
-    def parse_user_text(self,user_text):
+    def parse_user_text(self, user_text):
         item = user_text.split(("|"))
+
+        acc_num = item[0]
+        f_name = item[1]
+        l_name = item[2]
+        seat_num = item[3]
+        overdraft = item[4]
+        token_bal = item[5]
+
 
     
        
