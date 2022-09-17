@@ -2,8 +2,11 @@ from user import User
 
 
 class FileParser:
+    """ class that parses data from the users.txt file """
 
     def read_users(self, filename):
+        """ function that reads data from a file """
+
         users = []
 
         try:
@@ -26,6 +29,8 @@ class FileParser:
         return users
 
     def parse_user_text(self, user_text):
+        """ function that parses text content & returns user object """
+
         item = user_text.split(("|"))
 
         acc_num = item[0]
@@ -38,6 +43,8 @@ class FileParser:
         return User(acc_num, f_name, l_name, seat_num, overdraft, token_bal)
 
     def write_users(self, filename):
+        """ function that writes data to a file """
+
         lines = []
 
         try:
