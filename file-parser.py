@@ -21,8 +21,11 @@ class File_Parser():
         for line in lines:
             user = self.parse_user_text(line)
             users.append(user)
-            
+
         return users
+
+    def parse_user_text(self,user_text):
+        item = user_text.split(("|"))
 
     
        
