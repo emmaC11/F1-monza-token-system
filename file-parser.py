@@ -34,6 +34,8 @@ class File_Parser():
         overdraft = item[4]
         token_bal = item[5]
 
+        return User(acc_num, f_name, l_name, seat_num, overdraft, token_bal)
+
 
     
        
