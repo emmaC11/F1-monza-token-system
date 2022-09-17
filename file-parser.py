@@ -37,7 +37,13 @@ class File_Parser():
         return User(acc_num, f_name, l_name, seat_num, overdraft, token_bal)
 
     def write_users(self, filename):
-        
+        lines = []
+
+        try:
+            file = open(filename, "w")
+            file.writelines(lines)
+            file.close()
+
 
 
     
