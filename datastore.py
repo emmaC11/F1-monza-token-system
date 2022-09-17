@@ -10,4 +10,5 @@ class Datastore:
 
     def read_users(self):
         file_parser = FileParser()
-        self._users = file_parser.read_users(users.txt)
+        self._users = file_parser.read_users("users.txt")
+        
