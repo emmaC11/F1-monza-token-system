@@ -12,6 +12,11 @@ class File_Parser():
             lines = file.readlines()
             file.close()
 
+        except IOError:
+            print(f"Warning: Could not open {filename} for reading.")
+            input("Return to continue")
+            return users
+
        
 
 
