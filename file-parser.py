@@ -6,7 +6,7 @@ class File_Parser():
         users = []
 
         try:
-            file = open(filename, "read")
+            file = open(filename, "r")
 
             #file content stored in a list of strings
             lines = file.readlines()
