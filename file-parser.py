@@ -17,6 +17,14 @@ class File_Parser():
             input("Return to continue")
             return users
 
+        #loop through each line in file, parse & append users list
+        for line in lines:
+            user = self.parse_user_text(line)
+            users.append(user)
+            
+        return users
+
+    
        
 
 
