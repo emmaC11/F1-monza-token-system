@@ -47,11 +47,3 @@ class File_Parser():
         except IOError:
             print(f"Warning: Could not open {filename} for writing.")
             input("Return to continue")
-
-
-
-    
-       
-
-
-
