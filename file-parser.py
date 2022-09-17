@@ -8,7 +8,7 @@ class File_Parser():
         try:
             file = open(filename, "r")
 
-            #file content stored in a list of strings
+            # file content stored in a list of strings
             lines = file.readlines()
             file.close()
 
@@ -17,7 +17,7 @@ class File_Parser():
             input("Return to continue")
             return users
 
-        #loop through each line in file, parse & append users list
+        # loop through each line in file, parse & append users list
         for line in lines:
             user = self.parse_user_text(line)
             users.append(user)
