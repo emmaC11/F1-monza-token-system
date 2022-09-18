@@ -7,7 +7,7 @@ class Menu():
     def validate_menu(self,ds):
         user_input = "0"
 
-        while(user_input != "8"):
+        while (user_input != "8"):
             user_input = self.display_menu(ds)
            
             if user_input not in ["1","2","3","4","5","6","7","8"]:
@@ -35,8 +35,7 @@ class Menu():
         print("6. Search for User")
         print("7. Help")
         print("8. Exit Application")
-
-    
+        user_input = input("Please enter option (1-8)")
 
         if user_input == "1":
             print("call to view users function")
@@ -54,6 +53,10 @@ class Menu():
             print("call to help function")
         elif user_input == "8":
             print("exit application")
+        
+        return user_input
+
+       
 
     def view_users(self, ds):
         print("Acc Number    First Name    Last Name    Seat Number    Overdraft   Balance")
