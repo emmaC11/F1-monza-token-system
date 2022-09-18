@@ -34,5 +34,9 @@ class menu():
             print("call to help function")
         elif user_input == "8":
             print("exit application")
+            
+
+    def view_users(self,ds):
+
         
             
