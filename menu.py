@@ -29,6 +29,7 @@ class Menu():
 
         if user_input == "1":
             print("call to view users function")
+            self.view_users(ds)
         elif user_input == "2":
             print("call to add user function")
         elif user_input == "3":
