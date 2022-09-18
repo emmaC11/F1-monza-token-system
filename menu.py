@@ -4,7 +4,7 @@ from file_parser import FileParser
 
 class Menu():
 
-    def validate_menu(self,ds):
+    def validate_menu(self, ds):
         user_input = "0"
 
         while (user_input != "8"):
