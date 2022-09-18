@@ -4,6 +4,9 @@ from file_parser import FileParser
 
 class Menu():
 
+    def validate_menu(self,ds):
+        
+
     def display_menu(self, ds):
         print("Welcome!")
         print("Menu Options:")
