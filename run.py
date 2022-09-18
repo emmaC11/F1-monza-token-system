@@ -7,4 +7,4 @@ from menu import Menu
 ds = Datastore()
 menu = Menu()
 
-menu.display_menu(ds)
+menu.validate_menu(ds)
