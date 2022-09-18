@@ -14,16 +14,6 @@ class Menu():
                 print(f"Invalid menu option: {user_input}. Press return to try again")
                 input()
 
-        
-
-
-            
-
-       
-
-            
-
-
     def display_menu(self, ds):
         print("Welcome!")
         print("Menu Options:")
