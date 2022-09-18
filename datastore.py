@@ -16,3 +16,7 @@ class Datastore:
     def add_user(self, user):
         """appends user list with a new user"""
         self._users.append(user)
+
+    @property
+    def users(self):
+        return self._users
