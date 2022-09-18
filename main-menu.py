@@ -20,21 +20,21 @@ class menu():
 
         user_input = 0
 
-        if (user_input == "1"):
+        if user_input == "1":
             print("call to view users function")
-        elif (user_input == "2"):
+        elif user_input == "2":
             print("call to add user function")
-        elif (user_input == "3"):
+        elif user_input == "3":
             print("call to deposit function")
-        elif (user_input == "4"):
+        elif user_input == "4":
             print("call to withdraw function")
-        elif (user_input == "5"):
+        elif user_input == "5":
             print("call to transfer function")
-        elif (user_input == "6"):
+        elif user_input == "6":
             print("call to search function")
-        elif (user_input == "7"):
+        elif user_input == "7":
             print("call to help function")
-        elif (user_input == "8"):
+        elif user_input == "8":
             print("exit application")
         
             
