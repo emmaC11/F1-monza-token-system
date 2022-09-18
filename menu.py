@@ -9,6 +9,17 @@ class Menu():
 
         while(user_input != "8"):
             user_input = self.display_menu(ds)
+           
+            if user_input not in ["1","2","3","4","5","6","7","8"]:
+                print(f"Invalid menu option: {user_input}. Press return to try again")
+                input()
+
+        
+
+
+            
+
+       
 
             
 
