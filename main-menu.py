@@ -34,9 +34,13 @@ class menu():
             print("call to help function")
         elif user_input == "8":
             print("exit application")
-            
 
-    def view_users(self,ds):
+    def view_users(self, ds):
+        print("Acc Number    First Name    Last Name    Seat Number    Overdraft   Balance")
+        print("===========================================================================")
+
+        for user in ds.users:
+            print(user)
 
         
             
