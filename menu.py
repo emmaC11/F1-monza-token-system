@@ -2,7 +2,7 @@ from user import User
 from file_parser import FileParser
 
 
-class menu():
+class Menu():
 
     def display_menu(self, ds):
         print("Welcome!")
