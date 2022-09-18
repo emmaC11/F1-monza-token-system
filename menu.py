@@ -5,7 +5,13 @@ from file_parser import FileParser
 class Menu():
 
     def validate_menu(self,ds):
-        
+        user_input = 0
+
+        while(user_input != "8"):
+            user_input = self.display_menu(ds)
+
+            
+
 
     def display_menu(self, ds):
         print("Welcome!")
@@ -19,7 +25,7 @@ class Menu():
         print("7. Help")
         print("8. Exit Application")
 
-        user_input = 0
+    
 
         if user_input == "1":
             print("call to view users function")
