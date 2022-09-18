@@ -4,9 +4,7 @@ from file_parser import FileParser
 
 class menu():
 
-   
-
-    def displayMenu(self, ds):
+    def display_menu(self, ds):
         print("Welcome!")
         print("Menu Options:")
         print("1. View Current Users")
