@@ -46,8 +46,6 @@ class Menu():
         
         return user_input
 
-       
-
     def view_users(self, ds):
         print("Acc Number    First Name    Last Name    Seat Number    Overdraft   Balance")
         print("===========================================================================")
