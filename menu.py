@@ -32,6 +32,7 @@ class Menu():
             self.view_users(ds)
         elif user_input == "2":
             print("call to add user function")
+            self.add_user(ds)
         elif user_input == "3":
             print("call to deposit function")
         elif user_input == "4":
@@ -64,6 +65,15 @@ class Menu():
         last_name = input("Last Name: ")
         seat_num = input("Seat Number: ")
         
+        print("Would you like to sign up to an overdraft facility?\n Type 'y' to opt-in or 'n' to opt-out")
+        overdraft = input("Overdraft: ".lower())
+
+        # charge of 10 tokens for overdraft facility
+        if overdraft == "y":
+            balance = 10
+        else:
+            balance = 20
+
 
         
             
