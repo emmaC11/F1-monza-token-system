@@ -57,6 +57,13 @@ class Menu():
     def add_user(self, ds):
         print("Add user to token system")
         print("==========================")
+        
+        # to do - generate acc number automatically
+        acc_num = input("Account Number: ")
+        first_name = input("First Name: ")
+        last_name = input("Last Name: ")
+        seat_num = input("Seat Number: ")
+        
 
         
             
