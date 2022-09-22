@@ -77,6 +77,12 @@ class Menu():
             else:
                 balance = 20
 
+            for char in seat_num:
+                if char.isdigit():
+                    valid_seat = True
+                else:
+                    valid_seat = False
+
             # validation
             if overdraft != "y" and overdraft != "n":
                 print(f"Invalid Overdraft Input: {overdraft}")
@@ -91,6 +97,15 @@ class Menu():
                 input()
                 valid = False
                 break
+
+            elif valid_seat is False:
+                print(f"Invalid Seat Number Input {seat_num}")
+                print("Seat Number must include a number")
+                print("Return to continue")
+                input()
+                valid = False
+                break
+
                     
             new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
@@ -98,4 +113,3 @@ class Menu():
             print("Return to continue")
             input()
             valid = False
-            
