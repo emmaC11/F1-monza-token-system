@@ -58,8 +58,11 @@ class Menu():
     def add_user(self, ds):
         print("Add user to token system")
         print("==========================")
+
+        valid = True
         
         # to do - generate acc number automatically
+
         acc_num = input("Account Number: ")
         first_name = input("First Name: ")
         last_name = input("Last Name: ")
@@ -73,6 +76,17 @@ class Menu():
             balance = 10
         else:
             balance = 20
+
+            # validation
+            if overdraft != "y" or overdraft != "n":
+                print(f"Invalid Overdraft Input: {overdraft}")
+                print("Return to continue")
+                input()
+               
+            elif first_name == "" or last_name == "" or seat_num == "":
+                print("Fields cannot be left blank")
+                
+
 
         new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
         ds.add_user(new_user)
