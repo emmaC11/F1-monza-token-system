@@ -1,9 +1,11 @@
 class User:
 
     increment_acc_num = 0
-    
+
     def __init__(self, acc_num, f_name, l_name, seat_num, overdraft, balance):
-        self.acc_num = acc_num
+        self.acc_num = User.increment_acc_num
+        User.increment_acc_num += 1
+
         self.f_name = f_name
         self.l_name = l_name
         self.seat_num = seat_num
