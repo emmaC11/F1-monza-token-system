@@ -77,25 +77,21 @@ class Menu():
             else:
                 balance = 20
 
-                # validation
-                if overdraft != "y" or overdraft != "n":
-                    print(f"Invalid Overdraft Input: {overdraft}")
-                    print("Return to continue")
-                    input()
-                    valid = False
-                    break
+            # validation
+            if overdraft != "y" or overdraft != "n":
+                print(f"Invalid Overdraft Input: {overdraft}")
+                print("Return to continue")
+                input()
+                valid = False
+                break
                 
-                elif first_name == "" or last_name == "" or seat_num == "":
-                    print("Fields cannot be left blank")
-                    print("Return to continue")
-                    input()
-                    valid = False
-                    break
+            elif first_name == "" or last_name == "" or seat_num == "":
+                print("Fields cannot be left blank")
+                print("Return to continue")
+                input()
+                valid = False
+                break
                     
             new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
             print(f"new user {first_name} added successfully:")
-
-
-        
-            
