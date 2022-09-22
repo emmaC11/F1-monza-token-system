@@ -62,35 +62,39 @@ class Menu():
         valid = True
         
         # to do - generate acc number automatically
+        while valid is True:
+            acc_num = input("Account Number: ")
+            first_name = input("First Name: ")
+            last_name = input("Last Name: ")
+            seat_num = input("Seat Number: ")
+            
+            print("Would you like to sign up to an overdraft facility?\n Type 'y' to opt-in or 'n' to opt-out")
+            overdraft = input("Overdraft: ".lower())
 
-        acc_num = input("Account Number: ")
-        first_name = input("First Name: ")
-        last_name = input("Last Name: ")
-        seat_num = input("Seat Number: ")
-        
-        print("Would you like to sign up to an overdraft facility?\n Type 'y' to opt-in or 'n' to opt-out")
-        overdraft = input("Overdraft: ".lower())
+            # charge of 10 tokens for overdraft facility
+            if overdraft == "y":
+                balance = 10
+            else:
+                balance = 20
 
-        # charge of 10 tokens for overdraft facility
-        if overdraft == "y":
-            balance = 10
-        else:
-            balance = 20
-
-            # validation
-            if overdraft != "y" or overdraft != "n":
-                print(f"Invalid Overdraft Input: {overdraft}")
-                print("Return to continue")
-                input()
-               
-            elif first_name == "" or last_name == "" or seat_num == "":
-                print("Fields cannot be left blank")
+                # validation
+                if overdraft != "y" or overdraft != "n":
+                    print(f"Invalid Overdraft Input: {overdraft}")
+                    print("Return to continue")
+                    input()
+                    valid = False
+                    break
                 
-
-
-        new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
-        ds.add_user(new_user)
-        print(f"new user {first_name} added successfully:")
+                elif first_name == "" or last_name == "" or seat_num == "":
+                    print("Fields cannot be left blank")
+                    print("Return to continue")
+                    input()
+                    valid = False
+                    break
+                    
+            new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
+            ds.add_user(new_user)
+            print(f"new user {first_name} added successfully:")
 
 
         
