@@ -63,7 +63,6 @@ class Menu():
         
         # to do - generate acc number automatically
         while valid is True:
-            acc_num = input("Account Number: ")
             first_name = input("First Name: ")
             last_name = input("Last Name: ")
             seat_num = input("Seat Number: ")
@@ -107,7 +106,7 @@ class Menu():
                 break
 
                     
-            new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
+            new_user = User(first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
             print(f"new user {first_name} added successfully:")
             print("Return to continue")
