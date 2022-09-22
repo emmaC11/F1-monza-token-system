@@ -2,7 +2,7 @@ class User:
 
     increment_acc_num = 0
 
-    def __init__(self, acc_num, f_name, l_name, seat_num, overdraft, balance):
+    def __init__(self, f_name, l_name, seat_num, overdraft, balance):
         self.acc_num = User.increment_acc_num
         User.increment_acc_num += 1
 
