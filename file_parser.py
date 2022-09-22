@@ -33,14 +33,13 @@ class FileParser:
 
         item = user_text.split(("|"))
 
-        acc_num = item[0]
         f_name = item[1]
         l_name = item[2]
         seat_num = item[3]
         overdraft = item[4]
         token_bal = item[5]
 
-        return User(acc_num, f_name, l_name, seat_num, overdraft, token_bal)
+        return User(f_name, l_name, seat_num, overdraft, token_bal)
 
     def write_users(self, filename):
         """ function that writes data to a file """
