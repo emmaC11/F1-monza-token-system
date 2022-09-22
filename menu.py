@@ -95,3 +95,5 @@ class Menu():
             new_user = User(acc_num, first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
             print(f"new user {first_name} added successfully:")
+            valid = False
+            
