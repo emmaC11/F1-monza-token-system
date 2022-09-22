@@ -78,7 +78,7 @@ class Menu():
                 balance = 20
 
             # validation
-            if overdraft != "y" or overdraft != "n":
+            if overdraft != "y" and overdraft != "n":
                 print(f"Invalid Overdraft Input: {overdraft}")
                 print("Return to continue")
                 input()
@@ -96,4 +96,3 @@ class Menu():
             ds.add_user(new_user)
             print(f"new user {first_name} added successfully:")
             valid = False
-            
