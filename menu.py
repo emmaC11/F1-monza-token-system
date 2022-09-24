@@ -159,4 +159,14 @@ class Menu():
 
         
     def add_tokens_to_acc(self):
+        token_balance_valid = False
 
+        while token_balance_valid is False:
+            try:
+                add_token = int(input("Enter amount of tokens to deposit: "))
+            except ValueError:
+                print("Token Balance must be a whole number")
+            else:
+                token_balance_valid = True
+                
+        return add_token
