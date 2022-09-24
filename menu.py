@@ -155,3 +155,5 @@ class Menu():
             acc_num_found = True
             print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
 
+            new_token_balance = self.add_tokens_to_acc()
+
