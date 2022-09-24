@@ -151,22 +151,23 @@ class Menu():
         acc_num = self.get_acc_num()
 
         for user in ds.users:
-            if user.acc_num = acc_num
-            acc_num_found = True
-            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+            if user.acc_num == acc_num:
 
-            new_token_balance = self.add_tokens_to_acc()
+                acc_num_found = True
+                print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
 
-            if(new_token_balance <= 0):
-                print("Token amount must be greater than 0")
+                new_token_balance = self.add_tokens_to_acc()
+
+                if(new_token_balance <= 0):
+                    print("Token amount must be greater than 0")
+                    input("Return to continue")
+                    break
+
+                user.balance += new_token_balance 
+
+                print("Tokens added successfully!")
+                print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
                 input("Return to continue")
-                break
-
-            user.balance += new_token_balance 
-
-            print("Tokens added successfully!")
-            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
-            input("Return to continue")
 
 
         if acc_num_found is False:
