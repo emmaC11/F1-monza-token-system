@@ -157,6 +157,11 @@ class Menu():
 
             new_token_balance = self.add_tokens_to_acc()
 
+            if(new_token_balance <= 0):
+                print("Token amount must be greater than 0")
+                input("Return to continue")
+                break
+
         
     def add_tokens_to_acc(self):
         token_balance_valid = False
@@ -168,5 +173,5 @@ class Menu():
                 print("Token Balance must be a whole number")
             else:
                 token_balance_valid = True
-                
+
         return add_token
