@@ -112,3 +112,7 @@ class Menu():
             print("Return to continue")
             input()
             valid = False
+
+    def search_user(self, ds):
+        print("Search for user:")
+        print("================")
