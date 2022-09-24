@@ -153,4 +153,5 @@ class Menu():
         for user in ds.users:
             if user.acc_num = acc_num
             acc_num_found = True
+            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
 
