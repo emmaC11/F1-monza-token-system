@@ -145,5 +145,6 @@ class Menu():
         return acc_num
 
     def add_tokens(self, ds):
-        
+        print("Add tokens to account")
+        print("=====================")
 
