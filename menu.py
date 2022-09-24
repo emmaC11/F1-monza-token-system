@@ -119,6 +119,8 @@ class Menu():
 
         acc_num = self.get_acc_num()
 
+        acc_num_found = False
+
     def get_acc_num(self):
         acc_num_valid = False
 
