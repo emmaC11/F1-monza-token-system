@@ -150,3 +150,7 @@ class Menu():
         acc_num_found = False
         acc_num = self.get_acc_num()
 
+        for user in ds.users:
+            if user.acc_num = acc_num
+            acc_num_found = True
+
