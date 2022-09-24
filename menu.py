@@ -122,7 +122,7 @@ class Menu():
     def get_acc_num(self):
         acc_num_valid = False
 
-        while acc_num_valid == False:
+        while acc_num_valid is False:
             try:
                 acc_num = int(input("Please enter users account number: "))
             except NameError():
