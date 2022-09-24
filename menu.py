@@ -117,7 +117,7 @@ class Menu():
         print("Search for user:")
         print("================")
 
-        acc_num = get_acc_num()
+        acc_num = self.get_acc_num()
 
     def get_acc_num(self):
         acc_num_valid = False
