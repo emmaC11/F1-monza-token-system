@@ -127,4 +127,7 @@ class Menu():
                 acc_num = int(input("Please enter users account number: "))
             except NameError():
                 print("Invalid Account Number")
+            else:
+                acc_num_valid = True
+        return acc_num
 
