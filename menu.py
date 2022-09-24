@@ -121,6 +121,10 @@ class Menu():
 
         acc_num_found = False
 
+        for user in ds.users:
+            if user.acc_num == acc_num:
+                acc_num_found = True
+
     def get_acc_num(self):
         acc_num_valid = False
 
