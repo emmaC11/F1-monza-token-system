@@ -165,7 +165,15 @@ class Menu():
             user.balance += new_token_balance 
 
             print("Tokens added successfully!")
-            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance})
+            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+            input("Return to continue")
+
+
+        if acc_num_found is False:
+            print(f"Account Number '{acc_num}' cannot be found")
+            input("Press return to continue")
+
+
 
         
     def add_tokens_to_acc(self):
