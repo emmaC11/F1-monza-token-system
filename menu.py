@@ -162,6 +162,11 @@ class Menu():
                 input("Return to continue")
                 break
 
+            user.balance += new_token_balance 
+
+            print("Tokens added successfully!")
+            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance})
+
         
     def add_tokens_to_acc(self):
         token_balance_valid = False
