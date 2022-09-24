@@ -127,6 +127,10 @@ class Menu():
                 print(f"Account Number: {user.acc_num}  First Name: {user.first_name}  Seat Number: {user.seat_num}")
                 input("Press return to continue")
 
+        if acc_num_found is False:
+            print(f"Account Number '{acc_num}' cannot be found")
+            input("Press return to continue")
+
     def get_acc_num(self):
         acc_num_valid = False
 
