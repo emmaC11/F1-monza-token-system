@@ -124,6 +124,8 @@ class Menu():
         for user in ds.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
+                print(f"Account Number: {user.acc_num}  First Name: {user.first_name}  Seat Number: {user.seat_num}")
+                input("Press return to continue")
 
     def get_acc_num(self):
         acc_num_valid = False
