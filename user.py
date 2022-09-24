@@ -71,7 +71,7 @@ class User:
     @property
     def balance(self):
         print("getting value")
-        return self._balance
+        return self.token_bal
 
     @balance.setter
     def balance(self, value):
