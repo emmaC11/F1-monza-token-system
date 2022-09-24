@@ -118,3 +118,6 @@ class Menu():
         print("================")
 
         acc_num = get_acc_num()
+
+    def get_acc_num(self):
+        
