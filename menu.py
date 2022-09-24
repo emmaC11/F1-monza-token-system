@@ -41,6 +41,7 @@ class Menu():
             print("call to transfer function")
         elif user_input == "6":
             print("call to search function")
+            self.search_user(ds)
         elif user_input == "7":
             print("call to help function")
         elif user_input == "8":
@@ -124,7 +125,7 @@ class Menu():
         for user in ds.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
-                print(f"Account Number: {user.acc_num}  First Name: {user.first_name}  Seat Number: {user.seat_num}")
+                print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Seat Number: {user.seat_num}")
                 input("Press return to continue")
 
         if acc_num_found is False:
@@ -137,7 +138,7 @@ class Menu():
         while acc_num_valid is False:
             try:
                 acc_num = int(input("Please enter users account number: "))
-            except NameError():
+            except ValueError:
                 print("Invalid Account Number")
             else:
                 acc_num_valid = True
