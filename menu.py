@@ -35,6 +35,7 @@ class Menu():
             self.add_user(ds)
         elif user_input == "3":
             print("call to deposit function")
+            self.add_tokens(ds)
         elif user_input == "4":
             print("call to withdraw function")
         elif user_input == "5":
