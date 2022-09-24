@@ -116,3 +116,5 @@ class Menu():
     def search_user(self, ds):
         print("Search for user:")
         print("================")
+
+        acc_num = get_acc_num()
