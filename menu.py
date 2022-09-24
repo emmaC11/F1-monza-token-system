@@ -125,5 +125,6 @@ class Menu():
         while acc_num_valid == False:
             try:
                 acc_num = int(input("Please enter users account number: "))
-            except ValueError:
+            except NameError():
+                print("Invalid Account Number")
 
