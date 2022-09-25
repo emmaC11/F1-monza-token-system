@@ -276,6 +276,17 @@ class Menu():
             token_transfer = self.token_transfer_amount()
 
     def token_transfer_amount(self):
-        
+        token_transfer_valid = False
+
+        while token_transfer_valid is False:
+            try:
+                transfer_token = int(input("Enter amount of tokens to transfer: "))
+            except ValueError:
+                print("Token Balance must be a whole number")
+            else:
+                token_transfer_valid = True
+
+        return transfer_token
+
 
 
