@@ -277,6 +277,11 @@ class Menu():
                 print("Transfer amount must be a whole positive number")
                 input("Return to continue")
                 break
+            elif user.balance == 0:
+                print("Cannot transfer tokens")
+                print("Balance cannot be 0")
+                input("Return to continue")
+                break
 
     def token_transfer_amount(self):
         token_transfer_valid = False
