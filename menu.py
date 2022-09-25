@@ -289,7 +289,17 @@ class Menu():
         return transfer_token
 
     def transfer_acc_num(self):
-        
+        acc_num_valid = False
+
+        while acc_num_valid is False:
+            try:
+                acc_num_transfer = int(input("Account Number to receive tokens: "))
+            except ValueError:
+                print("Account Number must be a whole positive number")
+            else:
+                acc_num_valid = True
+                
+        return acc_num_transfer
 
 
 
