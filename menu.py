@@ -175,6 +175,11 @@ class Menu():
             print(f"Account Number '{acc_num}' cannot be found")
             input("Press return to continue")
 
+    def withdraw_tokens(self, ds):
+        print("Withdraw tokens from account")
+        print("============================")
+        
+
 
 
         
