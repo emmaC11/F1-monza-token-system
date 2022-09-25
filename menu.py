@@ -201,6 +201,14 @@ class Menu():
                     input("Press return to continue")
                     break
 
+                user.balance -= new_token_balance
+
+                print("Tokens withdrawn successfully!")
+                print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                input("Return to continue")
+
+                
+
     def withdraw_tokens_from_acc(self):
         token_balance_valid = False
 
