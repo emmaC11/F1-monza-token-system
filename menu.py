@@ -273,4 +273,6 @@ class Menu():
 
             print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
 
+            token_transfer = self.token_transfer_amount()
+
 
