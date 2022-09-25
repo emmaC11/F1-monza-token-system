@@ -230,8 +230,8 @@ class Menu():
     def token_code(self):
         token_code = []
 
-        for i in range(10):
-            number = random.randint(1, 500)
+        for i in range(6):
+            number = random.randint(1, 30)
             token_code.append(number)
 
         token_code = ' '.join(str(i) for i in token_code)
