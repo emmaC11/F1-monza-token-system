@@ -189,6 +189,11 @@ class Menu():
 
                 new_token_balance = self.withdraw_tokens_from_acc()
 
+                if user.balance < new_token_balance and user.overdraft == "n":
+                    print("Insufficient number of tokens to withdraw.\n You are not signed up to an overdraft facility")
+                    input("Press return to continue")
+                    break
+
     def withdraw_tokens_from_acc(self):
         token_balance_valid = False
 
