@@ -229,6 +229,9 @@ class Menu():
 
         for i in range(10):
             number = random.randint(1, 500)
+            token_code.append(number)
+
+        return token_code
 
 
 
