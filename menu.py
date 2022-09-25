@@ -196,6 +196,10 @@ class Menu():
                 elif user.balance == 0:
                     print("Cannot withdraw when token amount is 0")
                     break
+                elif new_token_balance <= 0:
+                    print("Token amount to withdraw must be greater than 0")
+                    input("Press return to continue")
+                    break
 
     def withdraw_tokens_from_acc(self):
         token_balance_valid = False
