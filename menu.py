@@ -293,6 +293,10 @@ class Menu():
                 input("Return to continue")
                 break
 
+            for user in ds.users:
+                if user.acc_num == transfer_acc_num:
+                    acc_num_found = True
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
