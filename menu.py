@@ -204,9 +204,12 @@ class Menu():
                     break
 
                 user.balance -= new_token_balance
+                code = self.token_code()
 
                 print("Tokens withdrawn successfully!")
                 print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                print(f"Your token collection code is: {code}")
+                print("Enter this code at any of the token collection points around the track to collect your tokens")
                 input("Return to continue")
 
                 
