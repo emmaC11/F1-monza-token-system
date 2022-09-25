@@ -283,6 +283,8 @@ class Menu():
                 input("Return to continue")
                 break
 
+            user.balance -= token_transfer
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
