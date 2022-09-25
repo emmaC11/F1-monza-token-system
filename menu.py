@@ -38,6 +38,7 @@ class Menu():
             self.add_tokens(ds)
         elif user_input == "4":
             print("call to withdraw function")
+            self.withdraw_tokens(ds)
         elif user_input == "5":
             print("call to transfer function")
         elif user_input == "6":
