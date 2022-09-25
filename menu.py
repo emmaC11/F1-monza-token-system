@@ -272,6 +272,11 @@ class Menu():
                 print("You are not signed up to an overdraft facility")
                 input("Return to continue")
                 break
+            elif token_transfer <= 0:
+                print("Cannot transfer tokens")
+                print("Transfer amount must be a whole positive number")
+                input("Return to continue")
+                break
 
     def token_transfer_amount(self):
         token_transfer_valid = False
