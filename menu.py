@@ -1,5 +1,6 @@
 from user import User
 from file_parser import FileParser
+import random
 
 
 class Menu():
@@ -225,6 +226,7 @@ class Menu():
 
     def token_code(self):
         
+
 
 
 
