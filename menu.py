@@ -285,6 +285,9 @@ class Menu():
 
             user.balance -= token_transfer
 
+            print("Enter account number of user you want to transfer tokens to:")
+            transfer_acc_num = self.transfer_acc_num()
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
