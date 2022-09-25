@@ -193,6 +193,9 @@ class Menu():
                     print("Insufficient number of tokens to withdraw.\n You are not signed up to an overdraft facility")
                     input("Press return to continue")
                     break
+                elif user.balance == 0:
+                    print("Cannot withdraw when token amount is 0")
+                    break
 
     def withdraw_tokens_from_acc(self):
         token_balance_valid = False
