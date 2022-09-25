@@ -237,14 +237,6 @@ class Menu():
         token_code = ' '.join(str(i) for i in token_code)
         return token_code
 
-
-
-
-
-
-
-
-
         
     def add_tokens_to_acc(self):
         token_balance_valid = False
@@ -298,7 +290,7 @@ class Menu():
                 print("Account Number must be a whole positive number")
             else:
                 acc_num_valid = True
-                
+
         return acc_num_transfer
 
 
