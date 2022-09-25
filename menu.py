@@ -275,4 +275,7 @@ class Menu():
 
             token_transfer = self.token_transfer_amount()
 
+    def token_transfer_amount(self):
+        
+
 
