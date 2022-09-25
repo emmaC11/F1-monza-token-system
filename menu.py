@@ -225,7 +225,10 @@ class Menu():
         return withdraw_token
 
     def token_code(self):
-        
+        token_code = []
+
+        for i in range(10):
+            number = random.randint(1, 500)
 
 
 
