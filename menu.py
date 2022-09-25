@@ -288,6 +288,11 @@ class Menu():
             print("Enter account number of user you want to transfer tokens to:")
             transfer_acc_num = self.transfer_acc_num()
 
+            if acc_num == transfer_acc_num:
+                print("Cannot transfer tokens to same account number")
+                input("Return to continue")
+                break
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
