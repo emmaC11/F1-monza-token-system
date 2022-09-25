@@ -267,6 +267,12 @@ class Menu():
 
             token_transfer = self.token_transfer_amount()
 
+            if user.overdraft == "n" and user.balance < token_transfer:
+                print("Cannot transfer tokens")
+                print("You are not signed up to an overdraft facility")
+                input("Return to continue")
+                break
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
