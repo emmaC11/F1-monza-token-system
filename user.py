@@ -10,7 +10,7 @@ class User:
         self.l_name = l_name
         self.seat_num = seat_num
         self.overdraft = overdraft
-        self.token_bal = balance
+        self.token_bal = int(balance)
 
     def __repr__(self):
         repr = (f"{str(self.acc_num).ljust(20)} {self.f_name.ljust(20)}")
@@ -76,7 +76,7 @@ class User:
     @balance.setter
     def balance(self, value):
         print("setting value")
-        self._balance = value
+        self.token_bal = value
 
 
 # testUser = User(5, "emma", "c", "5", "yes", 5)
