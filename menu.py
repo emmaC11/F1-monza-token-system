@@ -260,46 +260,47 @@ class Menu():
         acc_num = self.get_acc_num()
 
         for user in ds.users:
-            if user.acc_num == acc_num
-            acc_num_found = True
+            if user.acc_num == acc_num:
 
-            print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                acc_num_found = True
 
-            token_transfer = self.token_transfer_amount()
+                print(f"Account Number: {user.acc_num}  First Name: {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
 
-            if user.overdraft == "n" and user.balance < token_transfer:
-                print("Cannot transfer tokens")
-                print("You are not signed up to an overdraft facility")
-                input("Return to continue")
-                break
-            elif token_transfer <= 0:
-                print("Cannot transfer tokens")
-                print("Transfer amount must be a whole positive number")
-                input("Return to continue")
-                break
-            elif user.balance == 0:
-                print("Cannot transfer tokens")
-                print("Balance cannot be 0")
-                input("Return to continue")
-                break
+                token_transfer = self.token_transfer_amount()
 
-            user.balance -= token_transfer
-
-            print("Enter account number of user you want to transfer tokens to:")
-            transfer_acc_num = self.transfer_acc_num()
-
-            if acc_num == transfer_acc_num:
-                print("Cannot transfer tokens to same account number")
-                input("Return to continue")
-                break
-
-            for user in ds.users:
-                if user.acc_num == transfer_acc_num:
-                    acc_num_found = True
-
-                    user.balance += token_transfer
-                    print(f"{token_transfer} tokens successfully transfeered to account number {transfer_acc_num}")
+                if user.overdraft == "n" and user.balance < token_transfer:
+                    print("Cannot transfer tokens")
+                    print("You are not signed up to an overdraft facility")
                     input("Return to continue")
+                    break
+                elif token_transfer <= 0:
+                    print("Cannot transfer tokens")
+                    print("Transfer amount must be a whole positive number")
+                    input("Return to continue")
+                    break
+                elif user.balance == 0:
+                    print("Cannot transfer tokens")
+                    print("Balance cannot be 0")
+                    input("Return to continue")
+                    break
+
+                user.balance -= token_transfer
+
+                print("Enter account number of user you want to transfer tokens to:")
+                transfer_acc_num = self.transfer_acc_num()
+
+                if acc_num == transfer_acc_num:
+                    print("Cannot transfer tokens to same account number")
+                    input("Return to continue")
+                    break
+
+                for user in ds.users:
+                    if user.acc_num == transfer_acc_num:
+                        acc_num_found = True
+
+                        user.balance += token_transfer
+                        print(f"{token_transfer} tokens successfully transfeered to account number {transfer_acc_num}")
+                        input("Return to continue")
 
         if acc_num_found is False:
             print(f"Invalid account number: '{acc_num}'")
