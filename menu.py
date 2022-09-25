@@ -301,6 +301,10 @@ class Menu():
                     print(f"{token_transfer} tokens successfully transfeered to account number {transfer_acc_num}")
                     input("Return to continue")
 
+        if acc_num_found is False:
+            print(f"Invalid account number: '{acc_num}'")
+            input("Return to continue")
+
     def token_transfer_amount(self):
         token_transfer_valid = False
 
