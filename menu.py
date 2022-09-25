@@ -231,7 +231,9 @@ class Menu():
             number = random.randint(1, 500)
             token_code.append(number)
 
+        token_code = ' '.join(str(i) for i in token_code)
         return token_code
+
 
 
 
