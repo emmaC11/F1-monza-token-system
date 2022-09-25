@@ -42,6 +42,7 @@ class Menu():
             self.withdraw_tokens(ds)
         elif user_input == "5":
             print("call to transfer function")
+            self.transfer_tokens(ds)
         elif user_input == "6":
             print("call to search function")
             self.search_user(ds)
