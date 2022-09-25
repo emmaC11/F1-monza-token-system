@@ -258,3 +258,10 @@ class Menu():
                 token_balance_valid = True
 
         return add_token
+
+    
+    def transfer_tokens(self, ds):
+        print("Transfer tokens to another account")
+        print("==================================")
+
+        
