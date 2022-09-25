@@ -189,6 +189,20 @@ class Menu():
 
                 new_token_balance = self.withdraw_tokens_from_acc()
 
+    def withdraw_tokens_from_acc(self):
+        token_balance_valid = False
+
+        while token_balance_valid is False:
+            try:
+                withdraw_token = int(input("Enter amount of tokens to withdraw: "))
+            except ValueError:
+                print("Token Balance must be a whole number")
+            else:
+                token_balance_valid = True
+
+        return withdraw_token
+
+
 
 
 
