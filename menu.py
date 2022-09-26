@@ -1,6 +1,5 @@
-from user import User
-from file_parser import FileParser
 import random
+from user import User
 
 
 class Menu():
