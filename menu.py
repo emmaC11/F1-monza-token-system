@@ -294,7 +294,8 @@ Overdraft: {user.overdraft}", "green")
                 acc_num_found = True
 
                 cprint(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}", "green")
+ {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}\
+   Overdraft: {user.overdraft}", "green")
 
                 token_transfer = self.token_transfer_amount()
 
