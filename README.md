@@ -114,6 +114,15 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 | Feature                 | Expect                                                 | Action             | Result            |
 | -------------           | -------------                                          | ------------------ | -------           |
 | View Users           | list of all the current users in the users.txt file should be displayed  | "User enters option "1" from the main menu. Clicks return| All users in the system are displayed|
+| Add user - overdraft 'yes' | adds new user to the system with details user provided. New users balance should be 10  | "User enters option "2" from the main menu. Clicks return.
+EntersFirst Name - Lewis
+Enter Last Name - Hamilton
+Enters Seat Number - 5
+Chooses Overdraft Facility - y
+Clicks Return
+| User is successfully added to the system|
+
+
 
 
 
