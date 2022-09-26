@@ -1,5 +1,5 @@
 """module providing menu prompts to user"""
-
+import os
 import random
 from termcolor import colored, cprint
 from user import User
@@ -8,12 +8,16 @@ from user import User
 class Menu():
     """'UI' of the system where users chooses action they want to take """
 
+    def clear_terminal(self):
+        os.system('clear')
+
     def validate_menu(self, ds):
         """Validates user input in display menu class
         to ensure selection is between 1-7"""
         user_input = "0"
 
         while user_input != "7":
+            self.clear_terminal()
             user_input = self.display_menu(ds)
 
             if user_input not in ["1", "2", "3", "4", "5", "6", "7"]:
@@ -52,6 +56,7 @@ class Menu():
 
     def view_users(self, ds):
         """displays all users in users.txt"""
+        self.clear_terminal()
         cprint("Acc Number    First Name    Last Name    Seat Number    \
         Overdraft   Balance", "blue")
 
@@ -61,6 +66,7 @@ class Menu():
 
     def add_user(self, ds):
         """add user to the system"""
+        self.clear_terminal()
         cprint("Add user to token system", "cyan")
         cprint("==========================", "cyan")
 
@@ -118,6 +124,7 @@ class Menu():
 
     def search_user(self, ds):
         """search for user in the system"""
+        self.clear_terminal()
         cprint("Search for user:", "cyan")
         cprint("================", "cyan")
 
@@ -151,6 +158,7 @@ class Menu():
 
     def add_tokens(self, ds):
         """add tokens to users account"""
+        self.clear_terminal()
         cprint("Add tokens to account", "cyan")
         cprint("=====================", "cyan")
         acc_num_found = False
@@ -183,6 +191,7 @@ class Menu():
 
     def withdraw_tokens(self, ds):
         """withdraw tokens from users account"""
+        self.clear_terminal()
         cprint("Withdraw tokens from account", "cyan")
         cprint("============================", "cyan")
 
@@ -267,6 +276,7 @@ class Menu():
 
     def transfer_tokens(self, ds):
         """transfer tokens from one account number to another"""
+        self.clear_terminal()
         cprint("Transfer tokens to another account", "cyan")
         cprint("==================================", "cyan")
 
