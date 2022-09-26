@@ -12,20 +12,20 @@ class Menu():
         """clears the current content in the terminal"""
         os.system('clear')
 
-    def validate_menu(self, ds):
+    def validate_menu(self, datastore):
         """Validates user input in display menu class
         to ensure selection is between 1-7"""
         user_input = "0"
 
         while user_input != "7":
             self.clear_terminal()
-            user_input = self.display_menu(ds)
+            user_input = self.display_menu(datastore)
 
             if user_input not in ["1", "2", "3", "4", "5", "6", "7"]:
                 print(f"Invalid menu option: {user_input}.")
                 input("Press return to try again\n")
 
-    def display_menu(self, ds):
+    def display_menu(self, datastore):
         """displays menu options & calls functions based on users selection"""
         cprint("Welcome!", "magenta")
         cprint("Menu Options:", "magenta")
@@ -39,33 +39,33 @@ class Menu():
         user_input = input("Please enter option (1-7):\n")
 
         if user_input == "1":
-            self.view_users(ds)
+            self.view_users(datastore)
         elif user_input == "2":
-            self.add_user(ds)
+            self.add_user(datastore)
         elif user_input == "3":
-            self.add_tokens(ds)
+            self.add_tokens(datastore)
         elif user_input == "4":
-            self.withdraw_tokens(ds)
+            self.withdraw_tokens(datastore)
         elif user_input == "5":
-            self.transfer_tokens(ds)
+            self.transfer_tokens(datastore)
         elif user_input == "6":
-            self.search_user(ds)
+            self.search_user(datastore)
         elif user_input == "7":
             cprint("Thank you for using the F1 Monza Token System", "magenta")
 
         return user_input
 
-    def view_users(self, ds):
+    def view_users(self, datastore):
         """displays all users in users.txt"""
         self.clear_terminal()
         cprint("Acc Number    First Name    Last Name    Seat Number\
     Overdraft   Balance", "blue")
 
-        for user in ds.users:
+        for user in datastore.users:
             print(user)
         input("Return to continue\n")
 
-    def add_user(self, ds):
+    def add_user(self, datastore):
         """add user to the system"""
         self.clear_terminal()
         cprint("Add user to token system", "cyan")
@@ -160,12 +160,12 @@ class Menu():
 
             new_user = User(
                 first_name, last_name, seat_num, overdraft, balance)
-            ds.add_user(new_user)
+            datastore.add_user(new_user)
             cprint(f"new user {first_name} added successfully:", "green")
             input("Return to continue\n")
             valid = False
 
-    def search_user(self, ds):
+    def search_user(self, datastore):
         """search for user in the system"""
         self.clear_terminal()
         cprint("Search for user:", "cyan")
@@ -175,7 +175,7 @@ class Menu():
 
         acc_num_found = False
 
-        for user in ds.users:
+        for user in datastore.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
                 cprint(f"Account Number: {user.acc_num}  First Name:\
@@ -199,7 +199,7 @@ class Menu():
                 acc_num_valid = True
         return acc_num
 
-    def add_tokens(self, ds):
+    def add_tokens(self, datastore):
         """add tokens to users account"""
         self.clear_terminal()
         cprint("Add tokens to account", "cyan")
@@ -207,7 +207,7 @@ class Menu():
         acc_num_found = False
         acc_num = self.get_acc_num()
 
-        for user in ds.users:
+        for user in datastore.users:
             if user.acc_num == acc_num:
 
                 acc_num_found = True
@@ -233,7 +233,7 @@ class Menu():
             cprint(f"Account Number '{acc_num}' cannot be found", "red")
             input("Press return to continue\n")
 
-    def withdraw_tokens(self, ds):
+    def withdraw_tokens(self, datastore):
         """withdraw tokens from users account"""
         self.clear_terminal()
         cprint("Withdraw tokens from account", "cyan")
@@ -242,7 +242,7 @@ class Menu():
         acc_num_found = False
         acc_num = self.get_acc_num()
 
-        for user in ds.users:
+        for user in datastore.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
                 cprint(f"Account Number: {user.acc_num}  First Name:\
@@ -321,7 +321,7 @@ Overdraft: {user.overdraft}", "green")
 
         return add_token
 
-    def transfer_tokens(self, ds):
+    def transfer_tokens(self, datastore):
         """transfer tokens from one account number to another"""
         self.clear_terminal()
         cprint("Transfer tokens to another account", "cyan")
@@ -330,7 +330,7 @@ Overdraft: {user.overdraft}", "green")
         acc_num_found = False
         acc_num = self.get_acc_num()
 
-        for user in ds.users:
+        for user in datastore.users:
             if user.acc_num == acc_num:
 
                 acc_num_found = True
@@ -371,7 +371,7 @@ Overdraft: {user.overdraft}", "green")
                     input("Return to continue")
                     break
 
-                for user in ds.users:
+                for user in datastore.users:
                     if user.acc_num == transfer_acc_num:
                         acc_num_found = True
 
