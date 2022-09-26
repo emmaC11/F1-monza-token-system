@@ -22,8 +22,8 @@ class Menu():
 
     def display_menu(self, ds):
         """displays menu options & calls functions based on users selection"""
-        print("Welcome!")
-        print("Menu Options:")
+        cprint("Welcome!", "magenta")
+        cprint("Menu Options:", "magenta")
         print("1. View Current Users")
         print("2. Add User")
         print("3. Deposit Tokens")
@@ -31,7 +31,6 @@ class Menu():
         print("5. Transfer Tokens")
         print("6. Search for User")
         print("7. Exit Application")
-        cprint("Testing", "green")
         user_input = input("Please enter option (1-7):\n")
 
         if user_input == "1":
@@ -47,14 +46,14 @@ class Menu():
         elif user_input == "6":
             self.search_user(ds)
         elif user_input == "7":
-            print("Thank you for using the F1 Monza Token System")
+            cprint("Thank you for using the F1 Monza Token System", "magenta")
 
         return user_input
 
     def view_users(self, ds):
         """displays all users in users.txt"""
-        print("Acc Number    First Name    Last Name    Seat Number    \
-        Overdraft   Balance")
+        cprint("Acc Number    First Name    Last Name    Seat Number    \
+        Overdraft   Balance", "blue")
 
         for user in ds.users:
             print(user)
@@ -62,8 +61,8 @@ class Menu():
 
     def add_user(self, ds):
         """add user to the system"""
-        print("Add user to token system")
-        print("==========================")
+        cprint("Add user to token system", "cyan")
+        cprint("==========================", "cyan")
 
         valid = True
 
@@ -91,20 +90,20 @@ class Menu():
 
             # validation
             if overdraft != "y" and overdraft != "n":
-                print(f"Invalid Overdraft Input: {overdraft}")
+                cprint(f"Invalid Overdraft Input: {overdraft}", "red")
                 input("Return to continue\n")
                 valid = False
                 break
 
             elif first_name == "" or last_name == "" or seat_num == "":
-                print("Fields cannot be left blank")
+                cprint("Fields cannot be left blank", "red")
                 input("Return to continue\n")
                 valid = False
                 break
 
             elif valid_seat is False:
                 print(f"Invalid Seat Number Input {seat_num}")
-                print("Seat Number must include a number")
+                cprint("Seat Number must include a number", "red")
                 print("Return to continue")
                 input()
                 valid = False
@@ -113,14 +112,14 @@ class Menu():
             new_user = User(
                 first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
-            print(f"new user {first_name} added successfully:")
+            cprint(f"new user {first_name} added successfully:", "green")
             input("Return to continue\n")
             valid = False
 
     def search_user(self, ds):
         """search for user in the system"""
-        print("Search for user:")
-        print("================")
+        cprint("Search for user:", "cyan")
+        cprint("================", "cyan")
 
         acc_num = self.get_acc_num()
 
@@ -129,12 +128,12 @@ class Menu():
         for user in ds.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
-                print(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name} Seat Number: {user.seat_num}")
+                cprint(f"Account Number: {user.acc_num}  First Name:\
+ {user.f_name} Seat Number: {user.seat_num}", "green")
                 input("Press return to continue\n")
 
         if acc_num_found is False:
-            print(f"Account Number '{acc_num}' cannot be found")
+            cprint(f"Account Number '{acc_num}' cannot be found", "red")
             input("Press return to continue\n")
 
     def get_acc_num(self):
@@ -152,8 +151,8 @@ class Menu():
 
     def add_tokens(self, ds):
         """add tokens to users account"""
-        print("Add tokens to account")
-        print("=====================")
+        cprint("Add tokens to account", "cyan")
+        cprint("=====================", "cyan")
         acc_num_found = False
         acc_num = self.get_acc_num()
 
@@ -161,31 +160,31 @@ class Menu():
             if user.acc_num == acc_num:
 
                 acc_num_found = True
-                print(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                cprint(f"Account Number: {user.acc_num}  First Name:\
+ {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}", "green")
 
                 new_token_balance = self.add_tokens_to_acc()
 
                 if new_token_balance <= 0:
-                    print("Token amount must be greater than 0")
+                    cprint("Token amount must be greater than 0", "red")
                     input("Return to continue\n")
                     break
 
                 user.balance += new_token_balance
 
-                print("Tokens added successfully!")
+                cprint("Tokens added successfully!", "green")
                 print(f"Account Number: {user.acc_num}  First Name:\
  {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
                 input("Return to continue\n")
 
         if acc_num_found is False:
-            print(f"Account Number '{acc_num}' cannot be found")
+            cprint(f"Account Number '{acc_num}' cannot be found", "red")
             input("Press return to continue\n")
 
     def withdraw_tokens(self, ds):
         """withdraw tokens from users account"""
-        print("Withdraw tokens from account")
-        print("============================")
+        cprint("Withdraw tokens from account", "cyan")
+        cprint("============================", "cyan")
 
         acc_num_found = False
         acc_num = self.get_acc_num()
@@ -193,31 +192,31 @@ class Menu():
         for user in ds.users:
             if user.acc_num == acc_num:
                 acc_num_found = True
-                print(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                cprint(f"Account Number: {user.acc_num}  First Name:\
+ {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}", "green")
 
                 new_token_balance = self.withdraw_tokens_from_acc()
 
                 if user.balance < new_token_balance and user.overdraft == "n":
-                    print("Insufficient number of tokens to withdraw.")
-                    print("You are not signed up to an overdraft facility")
+                    cprint("Insufficient number of tokens to withdraw.", "red")
+                    cprint("You are not signed up to an overdraft facility", "red")
                     input("Press return to continue\n")
                     break
                 elif user.balance == 0:
-                    print("Cannot withdraw when token amount is 0")
+                    cprint("Cannot withdraw when token amount is 0", "red")
                     break
                 elif new_token_balance <= 0:
-                    print("Token amount to withdraw must be greater than 0")
+                    cprint("Token amount to withdraw must be greater than 0", "red")
                     input("Press return to continue\n")
                     break
 
                 user.balance -= new_token_balance
                 code = self.token_code()
 
-                print("Tokens withdrawn successfully!")
+                cprint("Tokens withdrawn successfully!", "green")
                 print(f"Account Number: {user.acc_num}  First Name:\
  {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
-                print(f"Your token collection code is: {code}")
+                cprint(f"Your token collection code is: {code}", "yellow")
                 print("Enter this code at any of the token collection points\
  around the track to collect your tokens")
                 input("Return to continue\n")
@@ -268,8 +267,8 @@ class Menu():
 
     def transfer_tokens(self, ds):
         """transfer tokens from one account number to another"""
-        print("Transfer tokens to another account")
-        print("==================================")
+        cprint("Transfer tokens to another account", "cyan")
+        cprint("==================================", "cyan")
 
         acc_num_found = False
         acc_num = self.get_acc_num()
@@ -279,24 +278,24 @@ class Menu():
 
                 acc_num_found = True
 
-                print(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}")
+                cprint(f"Account Number: {user.acc_num}  First Name:\
+ {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}", "green")
 
                 token_transfer = self.token_transfer_amount()
 
                 if user.overdraft == "n" and user.balance < token_transfer:
-                    print("Cannot transfer tokens")
-                    print("You are not signed up to an overdraft facility")
+                    cprint("Cannot transfer tokens", "red")
+                    cprint("You are not signed up to an overdraft facility", "red")
                     input("Return to continue")
                     break
                 elif token_transfer <= 0:
-                    print("Cannot transfer tokens")
-                    print("Transfer amount must be a whole positive number")
+                    cprint("Cannot transfer tokens", "red")
+                    cprint("Transfer amount must be a whole positive number", "red")
                     input("Return to continue")
                     break
                 elif user.balance == 0:
-                    print("Cannot transfer tokens")
-                    print("Balance cannot be 0")
+                    cprint("Cannot transfer tokens", "red")
+                    cprint("Balance cannot be 0", "red")
                     input("Return to continue")
                     break
 
@@ -307,7 +306,7 @@ class Menu():
                 transfer_acc_num = self.transfer_acc_num()
 
                 if acc_num == transfer_acc_num:
-                    print("Cannot transfer tokens to same account number")
+                    cprint("Cannot transfer tokens to same account number", "red")
                     input("Return to continue")
                     break
 
@@ -316,8 +315,8 @@ class Menu():
                         acc_num_found = True
 
                         user.balance += token_transfer
-                        print(f"{token_transfer} tokens successfully\
- transfered to account number {transfer_acc_num}")
+                        cprint(f"{token_transfer} tokens successfully\
+ transfered to account number {transfer_acc_num}", "green")
                         input("Return to continue \n")
 
         if acc_num_found is False:
