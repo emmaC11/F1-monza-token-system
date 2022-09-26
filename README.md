@@ -187,7 +187,7 @@ I used the following commands throughout the development of this project:
 * **git commit -m ""** - This command is used to write descriptive messages of what changes have been made to the code and commits the changes to the local repository.
 * **git push** - This command pushes all the committed changes to the Github repository.
 
-## Deployemnt to Heroku
+## Deployment to Heroku
 1. If your project contains any external packages, open a new terminal and type 'pip3 freeze > requirements.txt' then save and push the changes.
 2. Open [Heroku](https://dashboard.heroku.com/login) & create a free account.
 3. From the dashboard page, click the 'create new app' button.
