@@ -32,22 +32,16 @@ class Menu():
         user_input = input("Please enter option (1-7):\n")
 
         if user_input == "1":
-            print("call to view users function")
             self.view_users(ds)
         elif user_input == "2":
-            print("call to add user function")
             self.add_user(ds)
         elif user_input == "3":
-            print("call to deposit function")
             self.add_tokens(ds)
         elif user_input == "4":
-            print("call to withdraw function")
             self.withdraw_tokens(ds)
         elif user_input == "5":
-            print("call to transfer function")
             self.transfer_tokens(ds)
         elif user_input == "6":
-            print("call to search function")
             self.search_user(ds)
         elif user_input == "7":
             print("Thank you for using the F1 Monza Token System")
