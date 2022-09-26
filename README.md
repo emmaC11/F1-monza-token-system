@@ -38,3 +38,11 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/192310364-308b0a09-49ba-43fc-985b-b1f70438f3a6.png)
 
+
+## Deposit Tokens
+* Users can add tokens to their account, which they can use to buy food & drink around the track.
+* Menu option '3' must be selected to open the 'add tokens' dialog.
+* The user will be prompted to enter their account number & the amount of tokens they want to deposit.
+* If user inputs are valid, the tokens will be added to their account & their balance will be updated.
+
+![image](https://user-images.githubusercontent.com/83119583/192313863-308d46cc-57be-4cf5-b990-dcd348954ede.png)
