@@ -211,6 +211,30 @@ I used the following commands throughout the development of this project:
 6. A clone of the project will be created locally on your machine.
 **Note** - git commands only work if git is installed on your machine. Find installation documentation [here](https://git-scm.com/).
 
+# **Credits/References**
+
+## Technologies Used
+* [Python](https://www.python.org/)
+* [Github](https://github.com/emmaC11/PP1-starwars)
+* [GitPod](https://gitpod.io/)
+* [PEP8 Linter](https://code.visualstudio.com/docs/python/linting)
+* [Termcolor](https://pypi.org/project/termcolor/)
+
+## Code
+* I created a project similar to this last year in my OOP college class. I referenced this project, removed redundant code & added extra functionality.
+* I used this article to refresh my knowledge of [OOP Practices](https://realpython.com/python3-object-oriented-programming/).
+* I used this article to learn about [getters & setters](https://www.programiz.com/python-programming/property).
+* I referenced this article when using the file.[open method](https://www.w3schools.com/python/ref_func_open.asp).
+* I read this documentation when I was [formatting](https://www.flake8rules.com/rules/E302.html) my code.
+* Fixed the encoding warning message on the file.open method by referencing this [article](https://pylint.pycqa.org/en/latest/user_guide/messages/warning/unspecified-encoding.html).
+* Found this thread when trying to use [++](https://stackoverflow.com/questions/2632677/python-integer-incrementing-with) in python
+* I used these articles to understand the difference between [NameErrors](https://www.freecodecamp.org/news/nameerror-name-plot_cases_simple-is-not-defined-how-to-fix-this-python-error/#:~:text=What%20Is%20a%20NameError%20in,is%20yet%20to%20be%20defined.) & [ValueErrors](https://www.digitalocean.com/community/tutorials/python-valueerror-exception-handling-examples).
+* Read this thread when trying to convert the balance field from a string to an [int](https://stackoverflow.com/questions/11487036/using-python-how-would-i-take-in-an-integer-argument/11487054#11487054).
+* Referenced when trying to convert the token code [list to a string](https://www.simplilearn.com/tutorials/python-tutorial/list-to-string-in-python).
+* Installed this [VS extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22- ) to identify whitespace in my code.
+* I referenced this thread when I was using the [termcolor package](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
+* I referenced these articles when using the [OS clearscreen](https://www.geeksforgeeks.org/clear-screen-python/) [function](https://www.pythonanywhere.com/forums/topic/1758/)
+
 
 
 
