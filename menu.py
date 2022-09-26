@@ -138,7 +138,7 @@ class Menu():
                 # referenced this thread for loop syntax
             elif any([char in first_name for char in restricted_inputs]):
                 cprint("Name fields cannot contain numbers or\
-                special characters", "red")
+ special characters", "red")
                 input("Return to continue\n")
                 valid = False
                 break
