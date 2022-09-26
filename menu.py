@@ -152,7 +152,7 @@ class Menu():
             try:
                 acc_num = int(input("Please enter users account number: \n"))
             except ValueError:
-                print("Invalid Account Number")
+                cprint("Invalid Account Number", "red")
             else:
                 acc_num_valid = True
         return acc_num
@@ -236,7 +236,7 @@ Overdraft: {user.overdraft}", "green")
                 input("Return to continue\n")
 
         if acc_num_found is False:
-            print(f"Account Number '{acc_num}' cannot be found")
+            cprint(f"Account Number '{acc_num}' cannot be found", "red")
             input("Press return to continue\n")
 
     def withdraw_tokens_from_acc(self):
@@ -248,7 +248,7 @@ Overdraft: {user.overdraft}", "green")
                 withdraw_token = int(input("Enter amount of tokens to\
  withdraw: \n"))
             except ValueError:
-                print("Token Balance must be a whole number")
+                cprint("Token Balance must be a whole number", "red")
             else:
                 token_balance_valid = True
 
@@ -273,7 +273,7 @@ Overdraft: {user.overdraft}", "green")
             try:
                 add_token = int(input("Enter amount of tokens to deposit: \n"))
             except ValueError:
-                print("Token Balance must be a whole number")
+                cprint("Token Balance must be a whole number", "red")
             else:
                 token_balance_valid = True
 
@@ -339,7 +339,7 @@ Overdraft: {user.overdraft}", "green")
                         input("Return to continue \n")
 
         if acc_num_found is False:
-            print(f"Invalid account number: '{acc_num}'")
+            cprint(f"Invalid account number: '{acc_num}'", "red")
             input("Return to continue")
 
     def token_transfer_amount(self):
@@ -351,7 +351,7 @@ Overdraft: {user.overdraft}", "green")
                 transfer_token = int(input("Enter amount of tokens to\
  transfer: \n"))
             except ValueError:
-                print("Token Balance must be a whole number")
+                cprint("Token Balance must be a whole number", "red")
             else:
                 token_transfer_valid = True
 
@@ -366,7 +366,7 @@ Overdraft: {user.overdraft}", "green")
                 acc_num_transfer = int(input("Account Number to receive\
  tokens: \n"))
             except ValueError:
-                print("Account Number must be a whole positive number")
+                cprint("Account Number must be a whole positive number", "red")
             else:
                 acc_num_valid = True
 
