@@ -38,6 +38,15 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/192310364-308b0a09-49ba-43fc-985b-b1f70438f3a6.png)
 
+## Add User
+* New users can be added to the system, so they can avail of the token system at the Monza Grand Prix.
+* Menu option '2' must be selected to open the 'add user' dialog.
+* The new user will be prompted to enter their first name, last name, seat number & will have the option to sign up to an overdraft facility.
+* A new users balance by default is 20 tokens.
+* If a user signs up to the overdraft facility, there default balance will be 10 tokens as there is an additional charge to avail of the overdraft facility.
+* If user inputs are valid, the new user is added to the system.
+
+![image](https://user-images.githubusercontent.com/83119583/192322493-28004c72-ebfd-4a12-9dee-ab642b5c1a06.png)
 
 ## Deposit Tokens
 * Users can add tokens to their account, which they can use to buy food & drink around the track.
