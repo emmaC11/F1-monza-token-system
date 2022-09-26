@@ -111,7 +111,9 @@ I have used the PEP8 Linter to validate my code. It is activated within my visua
 View the documentation [here](https://peps.python.org/pep-0008/)
 
 ## Manual Testing
-
+| Feature                 | Expect                                                 | Action             | Result            |
+| -------------           | -------------                                          | ------------------ | -------           |
+| View Users           | list of all the current users in the users.txt file should be displayed  | "User enters option "1" from the main menu. Clicks return| All users in the system are displayed|
 
 
 
