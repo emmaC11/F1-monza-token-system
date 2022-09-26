@@ -301,12 +301,14 @@ Overdraft: {user.overdraft}", "green")
 
                 if user.overdraft == "n" and user.balance < token_transfer:
                     cprint("Cannot transfer tokens", "red")
-                    cprint("You are not signed up to an overdraft facility", "red")
+                    cprint("You are not signed up to an overdraft facility\
+                    ", "red")
                     input("Return to continue")
                     break
                 elif token_transfer <= 0:
                     cprint("Cannot transfer tokens", "red")
-                    cprint("Transfer amount must be a whole positive number", "red")
+                    cprint("Transfer amount must be a whole positive number\
+                    ", "red")
                     input("Return to continue")
                     break
                 elif user.balance == 0:
