@@ -106,7 +106,6 @@ class Menu():
                 valid = False
                 break
 
-                    
             new_user = User(first_name, last_name, seat_num, overdraft, balance)
             ds.add_user(new_user)
             print(f"new user {first_name} added successfully:")
@@ -160,7 +159,7 @@ class Menu():
 
                 new_token_balance = self.add_tokens_to_acc()
 
-                if(new_token_balance <= 0):
+                if new_token_balance <= 0:
                     print("Token amount must be greater than 0")
                     input("Return to continue\n")
                     break
