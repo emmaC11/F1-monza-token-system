@@ -134,6 +134,8 @@ class Menu():
                 valid = False
                 break
 
+                # https://stackoverflow.com/questions/32121521/in-python-how-can-i-check-that-a-string-does-not-contain-any-string-from-a-list
+                # referenced this thread for loop syntax
             elif any([char in first_name for char in restricted_inputs]):
                 cprint("Name fields cannot contain numbers or\
                 special characters", "red")
