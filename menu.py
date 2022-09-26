@@ -143,6 +143,13 @@ class Menu():
                 valid = False
                 break
 
+            elif any([char in last_name for char in restricted_inputs]):
+                cprint("Name fields cannot contain numbers or\
+ special characters", "red")
+                input("Return to continue\n")
+                valid = False
+                break
+
             elif valid_seat is False:
                 print(f"Invalid Seat Number Input {seat_num}")
                 cprint("Seat Number can only include numbers", "red")
