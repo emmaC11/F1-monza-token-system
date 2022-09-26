@@ -20,6 +20,7 @@ class User:
 
     @property
     def acc_num(self):
+        """account number getter"""
         print("getting value")
         return self._acc_num
 
@@ -30,6 +31,7 @@ class User:
 
     @property
     def f_name(self):
+        """first name getter"""
         print("getting value")
         return self._f_name
 
@@ -40,6 +42,7 @@ class User:
 
     @property
     def l_name(self):
+        """last name getter"""
         print("getting value")
         return self._l_name
 
@@ -50,6 +53,7 @@ class User:
 
     @property
     def seat_num(self):
+        """seat number getter"""
         print("getting value")
         return self._seat_num
 
@@ -60,6 +64,7 @@ class User:
 
     @property
     def overdraft(self):
+        """overdraft getter"""
         print("getting value")
         return self._overdraft
 
@@ -70,6 +75,7 @@ class User:
 
     @property
     def balance(self):
+        """balance getter"""
         print("getting value")
         return self.token_bal
 
