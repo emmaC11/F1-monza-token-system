@@ -1,6 +1,40 @@
 # F1 Monza Token System
 This application can be used by attendees of the Monza 2022 Italian Grand Prix. All food & drink needs to be purchased using tokens. This application allows attendees to create an account and add tokens to the account which they can they use at the track to purchase food & drink.
 
+# **Table Of Contents**
+* [User Experience & Functionality](#user-experience--functionality)
+    * [User Stories](#user-stories)
+        * [Diagrams](#diagrams)
+* [Features](#features)
+    * [Main Menu](#main-menu)
+    * [View Users](#view-users) 
+    * [Add User](#add-user)
+    * [Deposit Tokens](#deployment-to-heroku)
+    * [Withdraw Tokens](#withdraw-tokens)
+    * [Transfer Tokens](#transfer-tokens)
+    * [Search for User](#search-for-user)
+
+* [Design](#design)
+    * [Program Flow](#program-flow)
+    * [OOP Programming Paradigm](#oop-programming-paradigm)
+
+* [Testing](#testing)
+    * [Validator Testing](#validator-testing)
+    * [Manual Testing](#manual-testing)
+    * [Bugs Identified During Development & Testing](#bugs-identified-during-development--testing)
+
+* [Development Environment](#development-environment)
+    * [Development Structure](#dev-structure)
+* [Deployment](#deployment)
+    * [Project Creation](#project-creation)
+    * [GitHub Pages](#deployment-to-heroku)
+    * [Run Locally](#run-locally)
+
+* [Credits/References](#creditsreferences)
+    * [Technologies Used](#technologies-used)
+    * [Code](#code)
+    * [Achknowledgements](#achknowledgements)
+
 # **User Experience & Functionality**
 
 # User Stories
