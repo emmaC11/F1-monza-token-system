@@ -1,5 +1,5 @@
 # F1 Monza Token System
-This application can be used by attendees of the Monza 2022 Italian Grand Prix. All food & drink needs to be purchased using tokens. This application allows attendees to create an account and add tokens to the account which they can they use at the track to purchase food & drink. 
+This application can be used by attendees of the Monza 2022 Italian Grand Prix. All food & drink needs to be purchased using tokens. This application allows attendees to create an account and add tokens to the account which they can they use at the track to purchase food & drink.
 
 # **User Experience & Functionality**
 
@@ -17,4 +17,6 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 ![image](https://user-images.githubusercontent.com/83119583/190186382-ef471d0b-9346-41c2-a67d-67e62e8f1a7b.png)
 
 ![image](https://user-images.githubusercontent.com/83119583/190193272-6e2637eb-d03e-45dd-99eb-7ec7142cb6d2.png)
+
+# **Features **
 
