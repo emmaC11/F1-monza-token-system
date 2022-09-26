@@ -121,7 +121,7 @@ class Menu():
                 break
 
             elif len(first_name) < 3 or len(last_name) < 3:
-                cprint("Name fields must contain more than 2 characters", "red")
+                cprint("Name fields must be greater than 2 characters", "red")
                 input("Return to continue\n")
                 valid = False
                 break
