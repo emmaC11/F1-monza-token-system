@@ -1,6 +1,7 @@
 """module providing menu prompts to user"""
 
 import random
+from termcolor import colored, cprint
 from user import User
 
 
@@ -30,6 +31,7 @@ class Menu():
         print("5. Transfer Tokens")
         print("6. Search for User")
         print("7. Exit Application")
+        cprint("Testing", "green")
         user_input = input("Please enter option (1-7):\n")
 
         if user_input == "1":
