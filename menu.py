@@ -203,7 +203,8 @@ class Menu():
             if user.acc_num == acc_num:
                 acc_num_found = True
                 cprint(f"Account Number: {user.acc_num}  First Name:\
- {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}", "green")
+ {user.f_name}  Last Name: {user.l_name}  Token Balance: {user.balance}  \
+Overdraft: {user.overdraft}", "green")
 
                 new_token_balance = self.withdraw_tokens_from_acc()
 
