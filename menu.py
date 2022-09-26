@@ -58,8 +58,8 @@ class Menu():
     def view_users(self, ds):
         """displays all users in users.txt"""
         self.clear_terminal()
-        cprint("Acc Number    First Name    Last Name    Seat Number    \
-        Overdraft   Balance", "blue")
+        cprint("Acc Number    First Name    Last Name    Seat Number\
+    Overdraft   Balance", "blue")
 
         for user in ds.users:
             print(user)
