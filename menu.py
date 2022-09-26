@@ -8,10 +8,10 @@ class Menu():
     def validate_menu(self, ds):
         user_input = "0"
 
-        while (user_input != "8"):
+        while (user_input != "7"):
             user_input = self.display_menu(ds)
            
-            if user_input not in ["1","2","3","4","5","6","7","8"]:
+            if user_input not in ["1","2","3","4","5","6","7"]:
                 print(f"Invalid menu option: {user_input}. Press return to try again")
                 input()
 
@@ -24,9 +24,8 @@ class Menu():
         print("4. Withdraw Tokens")
         print("5. Transfer Tokens")
         print("6. Search for User")
-        print("7. Help")
-        print("8. Exit Application")
-        user_input = input("Please enter option (1-8):\n")
+        print("7. Exit Application")
+        user_input = input("Please enter option (1-7):\n")
 
         if user_input == "1":
             print("call to view users function")
