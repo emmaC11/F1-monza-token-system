@@ -46,9 +46,7 @@ class Menu():
             print("call to search function")
             self.search_user(ds)
         elif user_input == "7":
-            print("call to help function")
-        elif user_input == "8":
-            print("exit application")
+            print("Thank you for using the F1 Monza Token System")
         
         return user_input
 
@@ -209,6 +207,10 @@ class Menu():
                 print(f"Your token collection code is: {code}")
                 print("Enter this code at any of the token collection points around the track to collect your tokens")
                 input("Return to continue\n")
+
+        if acc_num_found is False:
+            print(f"Account Number '{acc_num}' cannot be found")
+            input("Press return to continue\n")
 
                 
 
