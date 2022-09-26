@@ -235,6 +235,10 @@ I used the following commands throughout the development of this project:
 * I referenced this thread when I was using the [termcolor package](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
 * I referenced these articles when using the [OS clearscreen](https://www.geeksforgeeks.org/clear-screen-python/) [function](https://www.pythonanywhere.com/forums/topic/1758/)
 
+## Achknowledgements
+I would like to thank my mentor Ronan for his guidance throughout my project.
+I would also like to thank Richard for his masterclasses & my classmate Grainne for her helpful input.
+
 
 
 
