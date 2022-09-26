@@ -56,3 +56,16 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * The user will be provided with a code that they can enter at the kiosks located around the track to claim their tokens.
 
 ![image](https://user-images.githubusercontent.com/83119583/192315324-1244999e-f742-4360-8664-d8a9c1da92c3.png)
+
+## Transfer Tokens
+* Users can transfer tokens from one account to another, which they can use to buy food & drink around the track.
+* Menu option '5' must be selected to open the 'transfer tokens' dialog.
+* The user will be prompted to enter their account number & the amount of tokens they want to transfer.
+* Users can transfer an amount greater than their current balance if they are signed up to the overdraft facility.
+* The user will then be prompted to enter the account number of the user they want to transfer their tokens to.
+* If the user inputs are valid, the tokens will be transferred from one account to another & the token balances will be updated.
+
+![image](https://user-images.githubusercontent.com/83119583/192317363-1749a3fb-1d11-42b6-8c04-649e1dcea4ae.png)
+
+
+
