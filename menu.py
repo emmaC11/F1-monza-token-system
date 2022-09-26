@@ -324,7 +324,8 @@ Overdraft: {user.overdraft}", "green")
                 transfer_acc_num = self.transfer_acc_num()
 
                 if acc_num == transfer_acc_num:
-                    cprint("Cannot transfer tokens to same account number", "red")
+                    cprint("Cannot transfer tokens to same account number\
+                    ", "red")
                     input("Return to continue")
                     break
 
