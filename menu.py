@@ -58,6 +58,7 @@ class Menu():
 
         for user in ds.users:
             print(user)
+        input("Return to continue\n")
 
     def add_user(self, ds):
         print("Add user to token system")
