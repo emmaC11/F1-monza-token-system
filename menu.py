@@ -1,7 +1,7 @@
 """module providing menu prompts to user"""
 import os
 import random
-from termcolor import colored, cprint
+from termcolor import cprint
 from user import User
 
 
