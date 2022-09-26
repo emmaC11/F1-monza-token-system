@@ -46,3 +46,13 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * If user inputs are valid, the tokens will be added to their account & their balance will be updated.
 
 ![image](https://user-images.githubusercontent.com/83119583/192313863-308d46cc-57be-4cf5-b990-dcd348954ede.png)
+
+## Withdraw Tokens
+* Users can withdraw tokens from their account, which they can use to buy food & drink around the track.
+* Menu option '4' must be selected to open the 'withdraw tokens' dialog.
+* The user will be prompted to enter their account number & the amount of tokens they want to withdraw.
+* Users can withdraw an amount greater than their current balance if they are signed up to the overdraft facility.
+* If the user inputs are valid, the tokens will be withdrawn from their account & their balance will be updated.
+* The user will be provided with a code that they can enter at the kiosks located around the track to claim their tokens.
+
+![image](https://user-images.githubusercontent.com/83119583/192315324-1244999e-f742-4360-8664-d8a9c1da92c3.png)
