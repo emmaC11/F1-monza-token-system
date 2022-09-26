@@ -210,14 +210,16 @@ Overdraft: {user.overdraft}", "green")
 
                 if user.balance < new_token_balance and user.overdraft == "n":
                     cprint("Insufficient number of tokens to withdraw.", "red")
-                    cprint("You are not signed up to an overdraft facility", "red")
+                    cprint("You are not signed up to an overdraft facility\
+                    ", "red")
                     input("Press return to continue\n")
                     break
                 elif user.balance == 0:
                     cprint("Cannot withdraw when token amount is 0", "red")
                     break
                 elif new_token_balance <= 0:
-                    cprint("Token amount to withdraw must be greater than 0", "red")
+                    cprint("Token amount to withdraw must be greater than 0\
+                    ", "red")
                     input("Press return to continue\n")
                     break
 
