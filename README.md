@@ -67,5 +67,13 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/192317363-1749a3fb-1d11-42b6-8c04-649e1dcea4ae.png)
 
+## Search for User
+* Users can search for other users in the system via their account number.
+* Menu option '6' must be selected to open the 'search user' dialog.
+* The user will be prompted to enter the account number of the user they want to find in the system.
+* If the account number is valid, the searched users details will be displayed.
+
+![image](https://user-images.githubusercontent.com/83119583/192318994-7fa789e5-63d5-49e0-b036-c48632e6d89c.png)
+
 
 
