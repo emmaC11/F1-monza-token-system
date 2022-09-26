@@ -100,5 +100,10 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 ## Program Flow
 For the design, I wanted the system to be easy to use & understand. That is why I added red text for error messages & green text for successful actions. User input is always required before the main menu screen is returned to keep the display clean & user dependent. I clear the terminal when a different menu option is selected to keep the output looking simple & less messy. 
 
+## OOP Programming Paradigm
+Object-Oriented Programming has many advantages, one of the main advantages is code reuse. Once code is written for a class, such as a user class. This code can be used re-used anytime an application needs to create a user. Inheritance works well for reusability. If you need the same functionality in multiple classes you can use a common (base) class for the same functionality and inherit that class via subclasses.
+OOP results in better applications being developed, developers create highly detailed programs that are easier to maintain and update. OOP code is easier to read due to its class structure. Programs that follow another programming paradigm, such as procedural programming tend to be quite large and difficult to follow.
+
+
 
 
