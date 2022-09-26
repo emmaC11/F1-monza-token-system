@@ -9,7 +9,7 @@ This application can be used by attendees of the Monza 2022 Italian Grand Prix. 
 * As a first time user, I want to withdraw tokens from my account.
 * As a first time user, I want to transfer tokens to my friend.
 * As a first time user, I want to search for my friend on the system.
-* As a first time user, I want to view other attendees using the application.
+* As a first time user, I want to view other attendees using the system.
 
 ## Diagrams
 Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app/lucidchart/ae7a1d80-d51b-4265-8c00-f8b68836fd6e/edit?beaconFlowId=C5E6AF6BD782FA24&invitationId=inv_38752bd1-bdde-4c7f-8d8d-eba843da0469&page=0_0#)
@@ -36,6 +36,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * The column headings have a blue text colour to highlight that they are headings not user details.
 * The user must click the return button to return to the main menu screen
 
+> User Story: As a first time user, I want to view other attendees using the system.
+
 ![image](https://user-images.githubusercontent.com/83119583/192310364-308b0a09-49ba-43fc-985b-b1f70438f3a6.png)
 
 ## Add User
@@ -46,6 +48,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * If a user signs up to the overdraft facility, there default balance will be 10 tokens as there is an additional charge to avail of the overdraft facility.
 * If user inputs are valid, the new user is added to the system.
 
+> User Story: As a first time user, I want to create an account.
+
 ![image](https://user-images.githubusercontent.com/83119583/192322493-28004c72-ebfd-4a12-9dee-ab642b5c1a06.png)
 
 ## Deposit Tokens
@@ -53,6 +57,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * Menu option '3' must be selected to open the 'add tokens' dialog.
 * The user will be prompted to enter their account number & the amount of tokens they want to deposit.
 * If user inputs are valid, the tokens will be added to their account & their balance will be updated.
+
+> User Story: As a first time user, I want to add tokens to my account.
 
 ![image](https://user-images.githubusercontent.com/83119583/192313863-308d46cc-57be-4cf5-b990-dcd348954ede.png)
 
@@ -64,6 +70,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * If the user inputs are valid, the tokens will be withdrawn from their account & their balance will be updated.
 * The user will be provided with a code that they can enter at the kiosks located around the track to claim their tokens.
 
+> User Story: As a first time user, I want to withdraw tokens from my account.
+
 ![image](https://user-images.githubusercontent.com/83119583/192315324-1244999e-f742-4360-8664-d8a9c1da92c3.png)
 
 ## Transfer Tokens
@@ -74,6 +82,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * The user will then be prompted to enter the account number of the user they want to transfer their tokens to.
 * If the user inputs are valid, the tokens will be transferred from one account to another & the token balances will be updated.
 
+> User Story: As a first time user, I want to transfer tokens to my friend.
+
 ![image](https://user-images.githubusercontent.com/83119583/192317363-1749a3fb-1d11-42b6-8c04-649e1dcea4ae.png)
 
 ## Search for User
@@ -81,6 +91,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * Menu option '6' must be selected to open the 'search user' dialog.
 * The user will be prompted to enter the account number of the user they want to find in the system.
 * If the account number is valid, the searched users details will be displayed.
+
+> User Story: As a first time user, I want to search for my friend on the system.
 
 ![image](https://user-images.githubusercontent.com/83119583/192318994-7fa789e5-63d5-49e0-b036-c48632e6d89c.png)
 
