@@ -9,6 +9,7 @@ class Menu():
     """'UI' of the system where users chooses action they want to take """
 
     def clear_terminal(self):
+        """clears the current content in the terminal"""
         os.system('clear')
 
     def validate_menu(self, ds):
