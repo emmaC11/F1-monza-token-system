@@ -11,7 +11,7 @@ class Menu():
         """Validates user input in display menu class to ensure selection is between 1-7"""
         user_input = "0"
 
-        while (user_input != "7"):
+        while user_input != "7":
             user_input = self.display_menu(ds)
            
             if user_input not in ["1", "2", "3", "4", "5", "6", "7"]:
