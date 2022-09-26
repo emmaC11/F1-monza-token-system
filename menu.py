@@ -95,6 +95,14 @@ class Menu():
                 else:
                     valid_seat = False
 
+            restricted_inputs = ["1", "2", "3" "4", "5", "6",
+                                 "7", "8", "9", "10", "!", "£",
+                                 "$", "%", "^", "&", "*", "(",
+                                 ")", "-", "_", "+", "=", ":",
+                                 ";", "@", "'", "#", "~", "<",
+                                 ">", ",", ".", "/", "?", "`",
+                                 "|"]
+
             # validation
             if overdraft != "y" and overdraft != "n":
                 cprint(f"Invalid Overdraft Input: {overdraft}", "red")
@@ -122,6 +130,13 @@ class Menu():
 
             elif len(first_name) < 3 or len(last_name) < 3:
                 cprint("Name fields must be greater than 2 characters", "red")
+                input("Return to continue\n")
+                valid = False
+                break
+
+            elif any([char in first_name for char in restricted_inputs]):
+                cprint("Name fields cannot contain numbers or\
+                special characters", "red")
                 input("Return to continue\n")
                 valid = False
                 break
