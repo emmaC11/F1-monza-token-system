@@ -147,6 +147,23 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 | Invalid Menu Option - string | no function should be called as the user input is invalid | User enters option "m" from the main menu.|  Error message informing user choice is invalid|
 | Exit System | system should stop running, no further inputs can be accepted| User enters option "7" from the main menu.|  system no longer running, no inputs accepted|
 
+## Bugs Identified During Development & Testing
+* When I first began creating my file structure & variable names, I was using the camel case naming convention. I was not aware that it was best practise to use the snake case naming convention when creating variables in python. I updated my variables & used snake case throughout the rest of my project.
+* In my datastore class, I did not create a users property, so when I was trying to call the users property in menu.py I was getting an error that the list could not be found. I then created the users property in the datastore class so I could access the users within the menu.
+* In my user class, I created the balance variable as a string & when I tried to perform any arithmetic operations such as add and substract, I was getting an error that a string and int cannot concatenate. I converted the balance parameter to an int within the user class to fix this bug.
+* When I completed writing an if else statement, I did not unindent my code & was writing code within the else block. I unindented my code to fix this issue.
+* In the overdraft validation, I was using 'or' instead of 'and' in my if statement. Using 'or' meant that only one conditional needed to be met while an 'and' statement means both conditionals need to be met.
+* Within my while loops, I was using JavaScript syntax of '==' instead of 'is', which is the correct approach in Python. I was also adding redundant brackets to my if statements & while loops.
+* When I called view users function, the data was only visible if I scrolled up in the terminal as the menu was being displayed after the function call. I added an input("return to continue") to the function so the menu would only return when the user was done reading the user list.
+* When I was calling my functions, I forgot to add the 'self.' keyword at times.
+* When validating the account number in the search function, I originally called a NameError however this accepted string inputs so I updated it to a ValueError.
+* When trying to use the built in 'cls' function in the OS module, I got an error saying 'cls' was not recognised. After some research I found a solution where I had to alternatively use 'clear'.
+* I needed to add some comments to my commits as my commit messages did not explain all the code written.
+* No error message is displayed when the account number that is receiving transferred tokens is invalid.
+* Seat number can only be numbers, not accepting strings.
+* When adding a user, first name is accepting special characters such as '@;0#@' etc.
+* Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
+![image](https://user-images.githubusercontent.com/83119583/192360064-9b54a089-e789-43ad-9774-1b5fd64e2066.png)
 
 
 
