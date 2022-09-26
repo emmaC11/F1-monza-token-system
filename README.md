@@ -20,3 +20,8 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 # **Features**
 
+## Main Menu
+* When the application loads successfully, a main menu is displayed with a list of options that the user to select from.
+* The applications title has a pink colour to distinguish it from the menu options.
+* The menu options are displayed in a liit format with a number correspoding each action.
+* There is an input prompt that prompts the user to enter their selection from the menu.
