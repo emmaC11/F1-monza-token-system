@@ -165,6 +165,14 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/192360064-9b54a089-e789-43ad-9774-1b5fd64e2066.png)
 
+# **Development Environment**
+## Dev Structure
+* The first step for this PP3 project was to come up with the project idea. Just a couple weeks prior I was at the Monza Italian Grand Prix & they had a token system in place for purchasing food & drink at the track. I was inspired by this real-world example for my project. I wanted to create a project using an OOP approach as most real-world software & applications use the OOP paradigm.
+* I created some use case diagrams & class diagrams to clarify the different classes I would need to create. I have learned from PP1 that having a good plan before writing any lines of code is critical. I felt I was more productive with my time on this project as I knew the design I wanted to implement and the algorithm I wanted to write.
+* To keep track of what tasks I needed to complete, I used [GitHub Issues](https://github.com/features/issues).
+* I kept a onenote notebook to log all notes, links etc associated with PP3. This help me keep track of what resources I used, feedback from mentor sessions, masterclass notes & bugs tracked throughout the development cycle.
+![image](https://user-images.githubusercontent.com/83119583/192363070-a492f7e3-3e66-4f20-810a-d5151d1ec940.png)
+
 
 
 
