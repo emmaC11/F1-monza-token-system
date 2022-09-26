@@ -107,7 +107,7 @@ OOP results in better applications being developed, developers create highly det
 # Testing
 
 ## Validator Testing
-I have used the PEP8 Linter to validate my code. It is activated within my visual studio. Throughout development I have been making tweaks to my code to ensure there are no errors.
+I have used the PEP8 Linter to validate my code. It is activated within my visual studio. I had lots of lines too long & whitespace errors. I used '\' in my print statements to reduce the line length & I installed a [VS Extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22) that highlights whitespace within the code. Throughout development I have been making tweaks to my code to ensure there are no errors.
 View the documentation [here](https://peps.python.org/pep-0008/)
 
 ## Manual Testing
