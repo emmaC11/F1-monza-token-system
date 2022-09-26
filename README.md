@@ -268,6 +268,7 @@ I used the following commands throughout the development of this project:
 * Installed this [VS extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22- ) to identify whitespace in my code.
 * I referenced this thread when I was using the [termcolor package](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
 * I referenced these articles when using the [OS clearscreen](https://www.geeksforgeeks.org/clear-screen-python/) [function](https://www.pythonanywhere.com/forums/topic/1758/)
+* I referenced this article when trying to detect [restricted characters](https://stackoverflow.com/questions/32121521/in-python-how-can-i-check-that-a-string-does-not-contain-any-string-from-a-list)
 
 ## Achknowledgements
 I would like to thank my mentor Ronan for his guidance throughout my project.
