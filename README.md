@@ -104,6 +104,12 @@ For the design, I wanted the system to be easy to use & understand. That is why 
 Object-Oriented Programming has many advantages, one of the main advantages is code reuse. Once code is written for a class, such as a user class. This code can be used re-used anytime an application needs to create a user. Inheritance works well for reusability. If you need the same functionality in multiple classes you can use a common (base) class for the same functionality and inherit that class via subclasses.
 OOP results in better applications being developed, developers create highly detailed programs that are easier to maintain and update. OOP code is easier to read due to its class structure. Programs that follow another programming paradigm, such as procedural programming tend to be quite large and difficult to follow.
 
+# Testing
+
+# Validator Testing
+I have used the PEP8 Linter to validate my code. It is activated within my visual studio. Throughout development I have been making tweaks to my code to ensure there are no errors.
+View the documentation [here](https://peps.python.org/pep-0008/)
+
 
 
 
