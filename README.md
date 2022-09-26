@@ -143,6 +143,9 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 | Transfer Tokens - overdraft | tokens transferred from one account to another & both balances are updated | User enters option "5" from the main menu. Clicks return. Enter Account Number - '1'. Clicks Return. Tokens to transfer: 40. Click Return. Account number to transfer: 0. Click Return| Message informing the user that the tokens have been transferred sucessfully & both users balances are updated|
 | Transfer Tokens - same account number | tokens should not be transferred as user is trying to transfer tokens to the same account number | User enters option "5" from the main menu. Clicks return. Enter Account Number - '0'. Clicks Return. Tokens to transfer: 10. Click Return. Account number to transfer: 0. Click Return|  Error message informing the user that they cannot transfer funds to the same account number|
 | Transfer Tokens - invalid transfer account number | tokens should not be transferred as user is trying to transfer tokens to the same account number | User enters option "5" from the main menu. Clicks return. Enter Account Number - '0'. Clicks Return. Tokens to transfer: 10. Click Return. Account number to transfer: 27. Click Return|  bug - no error message displayed|
+| Invalid Menu Option | no function should be called as the user input is invalid | User enters option "10" from the main menu.|  Error message informing user choice is invalid|
+| Invalid Menu Option - string | no function should be called as the user input is invalid | User enters option "m" from the main menu.|  Error message informing user choice is invalid|
+| Exit System | system should stop running, no further inputs can be accepted| User enters option "7" from the main menu.|  system no longer running, no inputs accepted|
 
 
 
