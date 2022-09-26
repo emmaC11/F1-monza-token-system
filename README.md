@@ -25,3 +25,6 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 * The applications title has a pink colour to distinguish it from the menu options.
 * The menu options are displayed in a liit format with a number correspoding each action.
 * There is an input prompt that prompts the user to enter their selection from the menu.
+
+![image](https://user-images.githubusercontent.com/83119583/192308716-930949a8-1487-4efe-b577-64b3bcfc28b5.png)
+
