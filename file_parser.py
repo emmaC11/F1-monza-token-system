@@ -1,3 +1,5 @@
+"""module that parses content from the txt file"""
+
 from user import User
 
 
