@@ -28,3 +28,13 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/192308716-930949a8-1487-4efe-b577-64b3bcfc28b5.png)
 
+
+## View Users
+* Users can view other atteendees of the grand prix who are using this system.
+* Menu option '1' must be selected to open the view users dialog.
+* All users of the system are displayed, the information provided is: account number, first name, last name, seat number, overdraft status & token balance.
+* The column headings have a blue text colour to highlight that they are headings not user details.
+* The user must click the return button to return to the main menu screen
+
+![image](https://user-images.githubusercontent.com/83119583/192310364-308b0a09-49ba-43fc-985b-b1f70438f3a6.png)
+
