@@ -173,7 +173,43 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 * I kept a onenote notebook to log all notes, links etc associated with PP3. This help me keep track of what resources I used, feedback from mentor sessions, masterclass notes & bugs tracked throughout the development cycle.
 ![image](https://user-images.githubusercontent.com/83119583/192363070-a492f7e3-3e66-4f20-810a-d5151d1ec940.png)
 
+# **Deployment**
+## Project Creation
+This project was created using Gitpod, Gitpod provides prebuilt development environments with a variety of IDEs.
 
+To use Gitpod, install the Gitpod extension on either Firefox or Chrome. When the extension is installed, it adds a green Gitpod button to Github, where we can click to create a workspace in Gitpod.
+
+For this project, I used the Visual Studio IDE. I used the prebuilt python environment provided by Code Instituet to start this project. I clicked the 'use this template' button and named my repository 'Caesar-Cipher'. I then created a Gitpod workspace by clicking the green gitpod button in my [F1-monza-token-system](https://github.com/emmaC11/F1-monza-token-system) repository.
+
+I used the following commands throughout the development of this project:
+* **python3 -run.py**  - This command runs the run.py file so I can see my code in the terminal.
+* **git add .** - This command adds all the changes that have been in the working directory to the staging area. Ready to be committed.
+* **git commit -m ""** - This command is used to write descriptive messages of what changes have been made to the code and commits the changes to the local repository.
+* **git push** - This command pushes all the committed changes to the Github repository.
+
+## Deployemnt to Heroku
+1. If your project contains any external packages, open a new terminal and type 'pip3 freeze > requirements.txt' then save and push the changes.
+2. Open [Heroku](https://dashboard.heroku.com/login) & create a free account.
+3. From the dashboard page, click the 'create new app' button.
+4. Create an app name, this must be unique & choose your region (either America or Europe).
+5. Click the settings tab & scroll to the buildpacks section.
+6. Click 'add buildpack' and select python , then click save changes.
+7. Click 'add buildpack' and select node.js , then click save changes.
+8. Click the deploy tab.
+9. Locate the 'deployment method' section and select GitHub.
+10. Click 'connect to  GitHub' & enter the repository name that contains the python code you want to deploy.
+11. To deploy scroll down and click the 'Deploy Branch' button.
+12. When the application has been deployed successfully, Heroku will provide a deployment link underneath the build section.
+**Note** - these steps only work for a Python project that has been generated using the CI Python Essentials Template.
+
+## Run Locally
+1. Locate the [GitHub Repository](https://github.com/emmaC11/F1-monza-token-system).
+2. Click the 'Code' dropdown button.
+3. Copy the git URL from the HTTPS text bar.
+4. Open a terminal window and locate the directory where you want to store the project.
+5. Type the 'git clone' command in the terminal, then paste the git URL. Click return on your keyboard to enter the command.
+6. A clone of the project will be created locally on your machine.
+**Note** - git commands only work if git is installed on your machine. Find installation documentation [here](https://git-scm.com/).
 
 
 
