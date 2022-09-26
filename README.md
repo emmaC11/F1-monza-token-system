@@ -135,6 +135,9 @@ View the documentation [here](https://peps.python.org/pep-0008/)
 | Withdraw Tokens - invalid account number| user balance should not be updated as invalid account number has been entered  | User enters option "4" from the main menu. Clicks return. Enter Account Number - h. Clicks Return. Tokens to withdraw - 30. Click Return| Error message displayed informing user that the account number is invalid & are prompted to enter another account number |
 | Withdraw Tokens - string token amount| user balance should not be updated as invalid token amount has been entered| User enters option "4" from the main menu. Clicks return. Enter Account Number - 1. Clicks Return. Tokens to withdraw - twenty. Click Return| Error message displayed informing user that the token amount must be a whole number |
 | Withdraw Tokens - token amount 0 | user balance should not be updated as invalid token amount has been entered| User enters option "4" from the main menu. Clicks return. Enter Account Number - 1. Clicks Return. Tokens to withdraw - 0. Click Return| Error message displayed informing user that the token amount must be greater than 0 |
+| Search User | searched users details should be displayed | User enters option "6" from the main menu. Clicks return. Enter Account Number - 1. Clicks Return.| User found successfully & information is displayed |
+| Search User - invalid account number | user should be informed that account number is invalid | User enters option "6" from the main menu. Clicks return. Enter Account Number - 27. Clicks Return.| Error message displayed informing user account number cannot be found|
+| Search User - invalid account number string | user should be informed that account number is invalid | User enters option "6" from the main menu. Clicks return. Enter Account Number - 'account number 4'. Clicks Return.| Error message displayed informing user account numbers is invalid|
 
 
 
