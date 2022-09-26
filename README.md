@@ -18,5 +18,5 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/190193272-6e2637eb-d03e-45dd-99eb-7ec7142cb6d2.png)
 
-# **Features **
+# **Features**
 
