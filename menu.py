@@ -120,6 +120,12 @@ class Menu():
                 valid = False
                 break
 
+            elif len(first_name) < 3 or len(last_name) < 3:
+                cprint("Name fields must contain more than 2 characters", "red")
+                input("Return to continue\n")
+                valid = False
+                break
+
             elif valid_seat is False:
                 print(f"Invalid Seat Number Input {seat_num}")
                 cprint("Seat Number can only include numbers", "red")
