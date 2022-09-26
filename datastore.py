@@ -1,3 +1,6 @@
+"""module that reads & writes data from users.txt"""
+
+
 from file_parser import FileParser
 
 
@@ -19,4 +22,5 @@ class Datastore:
 
     @property
     def users(self):
+        """getter for users list"""
         return self._users
