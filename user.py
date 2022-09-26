@@ -17,9 +17,9 @@ class User:
         self.token_bal = int(balance)
 
     def __repr__(self):
-        repr = (f"{str(self.acc_num).ljust(20)} {self.f_name.ljust(20)}")
-        repr = repr + (f"{self.seat_num.ljust(20)} {self.l_name.ljust(20)}")
-        repr = repr + (f"{self.overdraft.ljust(20)} {self.token_bal}")
+        repr = (f"{str(self.acc_num).ljust(15)} {self.f_name.ljust(15)}")
+        repr = repr + (f"{self.l_name.ljust(12)} {self.seat_num.ljust(12)}")
+        repr = repr + (f"{self.overdraft.ljust(13)} {self.token_bal}")
         return repr
 
     @property
