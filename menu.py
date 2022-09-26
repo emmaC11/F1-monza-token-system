@@ -1,3 +1,5 @@
+"""module providing menu prompts to user"""
+
 import random
 from user import User
 
