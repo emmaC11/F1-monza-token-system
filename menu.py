@@ -3,8 +3,10 @@ from user import User
 
 
 class Menu():
+    """'UI' of the system where users chooses action they want to take """
 
     def validate_menu(self, ds):
+        """Validates user input in display menu class to ensure selection is between 1-7"""
         user_input = "0"
 
         while (user_input != "7"):
@@ -15,6 +17,7 @@ class Menu():
                 input()
 
     def display_menu(self, ds):
+        """displays menu options & calls functions based on users selection"""
         print("Welcome!")
         print("Menu Options:")
         print("1. View Current Users")
@@ -50,6 +53,7 @@ class Menu():
         return user_input
 
     def view_users(self, ds):
+        """displays all users in users.txt"""
         print("Acc Number    First Name    Last Name    Seat Number    Overdraft   Balance")
         print("===========================================================================")
 
@@ -58,6 +62,7 @@ class Menu():
         input("Return to continue\n")
 
     def add_user(self, ds):
+        """add user to the system"""
         print("Add user to token system")
         print("==========================")
 
@@ -113,6 +118,7 @@ class Menu():
             valid = False
 
     def search_user(self, ds):
+        """search for user in the system"""
         print("Search for user:")
         print("================")
 
@@ -131,6 +137,7 @@ class Menu():
             input("Press return to continue\n")
 
     def get_acc_num(self):
+        """prompt user for account number & validate input"""
         acc_num_valid = False
 
         while acc_num_valid is False:
@@ -143,6 +150,7 @@ class Menu():
         return acc_num
 
     def add_tokens(self, ds):
+        """add tokens to users account"""
         print("Add tokens to account")
         print("=====================")
         acc_num_found = False
@@ -173,6 +181,7 @@ class Menu():
             input("Press return to continue\n")
 
     def withdraw_tokens(self, ds):
+        """withdraw tokens from users account"""
         print("Withdraw tokens from account")
         print("============================")
 
@@ -214,6 +223,7 @@ class Menu():
                 
 
     def withdraw_tokens_from_acc(self):
+        """prompt user for withdraw amount & validate input"""
         token_balance_valid = False
 
         while token_balance_valid is False:
@@ -227,6 +237,7 @@ class Menu():
         return withdraw_token
 
     def token_code(self):
+        """generates random string of numbers"""
         token_code = []
 
         for i in range(6):
@@ -238,6 +249,7 @@ class Menu():
 
         
     def add_tokens_to_acc(self):
+        """prompt user for token amount & validate input"""
         token_balance_valid = False
 
         while token_balance_valid is False:
@@ -252,6 +264,7 @@ class Menu():
 
     
     def transfer_tokens(self, ds):
+        """transfer tokens from one account number to another"""
         print("Transfer tokens to another account")
         print("==================================")
 
@@ -306,6 +319,7 @@ class Menu():
             input("Return to continue")
 
     def token_transfer_amount(self):
+        """prompt user for transfer amount & validate input"""
         token_transfer_valid = False
 
         while token_transfer_valid is False:
@@ -319,6 +333,7 @@ class Menu():
         return transfer_token
 
     def transfer_acc_num(self):
+        """prompt user for transfer account number & validate input"""
         acc_num_valid = False
 
         while acc_num_valid is False:
