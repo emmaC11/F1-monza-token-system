@@ -106,9 +106,12 @@ OOP results in better applications being developed, developers create highly det
 
 # Testing
 
-# Validator Testing
+## Validator Testing
 I have used the PEP8 Linter to validate my code. It is activated within my visual studio. Throughout development I have been making tweaks to my code to ensure there are no errors.
 View the documentation [here](https://peps.python.org/pep-0008/)
+
+## Manual Testing
+
 
 
 
