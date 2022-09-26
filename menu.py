@@ -114,9 +114,15 @@ class Menu():
                 valid = False
                 break
 
+            elif len(seat_num) >= 5:
+                cprint("Seat Number cannot be greater than 4 numbers", "red")
+                input("Return to continue\n")
+                valid = False
+                break
+
             elif valid_seat is False:
                 print(f"Invalid Seat Number Input {seat_num}")
-                cprint("Seat Number must include a number", "red")
+                cprint("Seat Number can only include numbers", "red")
                 print("Return to continue")
                 input()
                 valid = False
