@@ -96,5 +96,9 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ![image](https://user-images.githubusercontent.com/83119583/192318994-7fa789e5-63d5-49e0-b036-c48632e6d89c.png)
 
+# Design
+## Program Flow
+For the design, I wanted the system to be easy to use & understand. That is why I added red text for error messages & green text for successful actions. User input is always required before the main menu screen is returned to keep the display clean & user dependent. I clear the terminal when a different menu option is selected to keep the output looking simple & less messy. 
+
 
 
