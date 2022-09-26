@@ -14,7 +14,7 @@ class Menu():
 
         while user_input != "7":
             user_input = self.display_menu(ds)
-           
+
             if user_input not in ["1", "2", "3", "4", "5", "6", "7"]:
                 print(f"Invalid menu option: {user_input}.")
                 input("Press return to try again\n")
@@ -46,13 +46,13 @@ class Menu():
             self.search_user(ds)
         elif user_input == "7":
             print("Thank you for using the F1 Monza Token System")
-        
+
         return user_input
 
     def view_users(self, ds):
         """displays all users in users.txt"""
         print("Acc Number    First Name    Last Name    Seat Number    \
-        Overdraft   Balance") 
+        Overdraft   Balance")
 
         for user in ds.users:
             print(user)
@@ -64,13 +64,13 @@ class Menu():
         print("==========================")
 
         valid = True
-        
+
         # to do - generate acc number automatically
         while valid is True:
             first_name = input("First Name:\n ")
             last_name = input("Last Name:\n ")
             seat_num = input("Seat Number:\n ")
-            
+
             print("Would you like to sign up to an overdraft facility?")
             print("Type 'y' to opt-in or 'n' to opt-out")
             overdraft = input("Overdraft: \n".lower())
@@ -93,7 +93,7 @@ class Menu():
                 input("Return to continue\n")
                 valid = False
                 break
-                
+
             elif first_name == "" or last_name == "" or seat_num == "":
                 print("Fields cannot be left blank")
                 input("Return to continue\n")
@@ -169,7 +169,7 @@ class Menu():
                     input("Return to continue\n")
                     break
 
-                user.balance += new_token_balance 
+                user.balance += new_token_balance
 
                 print("Tokens added successfully!")
                 print(f"Account Number: {user.acc_num}  First Name:\
@@ -249,7 +249,7 @@ class Menu():
 
         token_code = ' '.join(str(i) for i in token_code)
         return token_code
-   
+
     def add_tokens_to_acc(self):
         """prompt user for token amount & validate input"""
         token_balance_valid = False
@@ -263,7 +263,7 @@ class Menu():
                 token_balance_valid = True
 
         return add_token
-  
+
     def transfer_tokens(self, ds):
         """transfer tokens from one account number to another"""
         print("Transfer tokens to another account")
@@ -351,6 +351,3 @@ class Menu():
                 acc_num_valid = True
 
         return acc_num_transfer
-
-
-
