@@ -73,7 +73,6 @@ class Menu():
 
         valid = True
 
-        # to do - generate acc number automatically
         while valid is True:
             first_name = input("First Name:\n ")
             last_name = input("Last Name:\n ")
