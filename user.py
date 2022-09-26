@@ -1,4 +1,8 @@
+"""module providing blueprint/template of a user"""
+
+
 class User:
+    """class representing a user"""
 
     increment_acc_num = 0
 
