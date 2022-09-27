@@ -50,7 +50,7 @@ Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app
 
 ## Use Case Diagram
 A use case diagram shows how a system would work when a user (actor) is using the software. A system is what a developer is developing, it can be an app, website, or business idea. In a use case diagram, a system is represented as a square with the name of the system (title) at the top.
-An actor is someone who is going to use the application, represented as a stick figure. There are primary and secondary actors. Primary actors initiate the use of the system. Secondary actors are reactionary to the primary actors. Primary actors are located outside the system to the left, and secondary actors are positioned to the right. In the banking application, the user is a primary actor and the bank is a secondary actor.
+An actor is someone who is going to use the application, represented as a stick figure. There are primary and secondary actors. Primary actors initiate the use of the system. Secondary actors are reactionary to the primary actors. Primary actors are located outside the system to the left, and secondary actors are positioned to the right. In the F1 Monza token system, the user is a primary actor.
 A use case represents an action that accomplishes a task within the system, a use case is represented by an oval.
 A relationship is how our actors interact with the use cases within the system. Actors and use cases have associations, connected by a straight line. All actors need at least one association with a use case.
 
@@ -63,20 +63,20 @@ A class diagram is a diagram that describes the structure of a system by showing
 # **Features**
 
 ## Main Menu
-* When the application loads successfully, a main menu is displayed with a list of options that the user to select from.
+* When the application loads successfully, a main menu is displayed with a list of options that the user can select from.
 * The applications title has a pink colour to distinguish it from the menu options.
-* The menu options are displayed in a liit format with a number correspoding each action.
+* The menu options are displayed in a list format with a number correspoding to each action.
 * There is an input prompt that prompts the user to enter their selection from the menu.
 
 ![image](https://user-images.githubusercontent.com/83119583/192308716-930949a8-1487-4efe-b577-64b3bcfc28b5.png)
 
 
 ## View Users
-* Users can view other atteendees of the grand prix who are using this system.
+* Users can view other attendees of the grand prix who are using the F1 Monza token system.
 * Menu option '1' must be selected to open the view users dialog.
 * All users of the system are displayed, the information provided is: account number, first name, last name, seat number, overdraft status & token balance.
-* The column headings have a blue text colour to highlight that they are headings not user details.
-* The user must click the return button to return to the main menu screen
+* The column headings have a blue text colour to highlight that they are headings, not user details.
+* The user must click the return button to return to the main menu screen.
 
 > User Story: As a first time user, I want to view other attendees using the system.
 
@@ -87,8 +87,8 @@ A class diagram is a diagram that describes the structure of a system by showing
 * Menu option '2' must be selected to open the 'add user' dialog.
 * The new user will be prompted to enter their first name, last name, seat number & will have the option to sign up to an overdraft facility.
 * A new users balance by default is 20 tokens.
-* If a user signs up to the overdraft facility, there default balance will be 10 tokens as there is an additional charge to avail of the overdraft facility.
-* If user inputs are valid, the new user is added to the system.
+* If a user signs up to the overdraft facility, the default balance will be 10 tokens as there is an additional charge to avail of the overdraft facility.
+* If user inputs are valid, the new user is added to the F1 Monza Token system.
 
 > User Story: As a first time user, I want to create an account.
 
@@ -109,7 +109,7 @@ A class diagram is a diagram that describes the structure of a system by showing
 * Menu option '4' must be selected to open the 'withdraw tokens' dialog.
 * The user will be prompted to enter their account number & the amount of tokens they want to withdraw.
 * Users can withdraw an amount greater than their current balance if they are signed up to the overdraft facility.
-* If the user inputs are valid, the tokens will be withdrawn from their account & their balance will be updated.
+* If user inputs are valid, the tokens will be withdrawn from their account & their balance will be updated.
 * The user will be provided with a code that they can enter at the kiosks located around the track to claim their tokens.
 
 > User Story: As a first time user, I want to withdraw tokens from my account.
@@ -122,14 +122,14 @@ A class diagram is a diagram that describes the structure of a system by showing
 * The user will be prompted to enter their account number & the amount of tokens they want to transfer.
 * Users can transfer an amount greater than their current balance if they are signed up to the overdraft facility.
 * The user will then be prompted to enter the account number of the user they want to transfer their tokens to.
-* If the user inputs are valid, the tokens will be transferred from one account to another & the token balances will be updated.
+* If user inputs are valid, the tokens will be transferred from one account to another & both token balances will be updated.
 
 > User Story: As a first time user, I want to transfer tokens to my friend.
 
 ![image](https://user-images.githubusercontent.com/83119583/192317363-1749a3fb-1d11-42b6-8c04-649e1dcea4ae.png)
 
 ## Search for User
-* Users can search for other users in the system via their account number.
+* Users can search for other users using the F1 Monza token system via their account number.
 * Menu option '6' must be selected to open the 'search user' dialog.
 * The user will be prompted to enter the account number of the user they want to find in the system.
 * If the account number is valid, the searched users details will be displayed.
@@ -140,7 +140,7 @@ A class diagram is a diagram that describes the structure of a system by showing
 
 # Design
 ## Program Flow
-For the design, I wanted the system to be easy to use & understand. That is why I added red text for error messages & green text for successful actions. User input is always required before the main menu screen is returned to keep the display clean & user dependent. I clear the terminal when a different menu option is selected to keep the output looking simple & less messy. 
+For the design, I wanted the system to be easy to use & easy to understand. That is why I added red text for error messages & green text for successful actions. User input is always required before the main menu screen is returned to keep the display clean & makes the system dependent on user actions. I clear the terminal when a different menu option is selected to keep the output looking simple & less messy.
 
 ## OOP Programming Paradigm
 Object-Oriented Programming has many advantages, one of the main advantages is code reuse. Once code is written for a class, such as a user class. This code can be used re-used anytime an application needs to create a user. Inheritance works well for reusability. If you need the same functionality in multiple classes you can use a common (base) class for the same functionality and inherit that class via subclasses.
@@ -149,13 +149,13 @@ OOP results in better applications being developed, developers create highly det
 # Testing
 
 ## Validator Testing
-I have used the PEP8 Linter to validate my code. It is activated within my code editor (Visual Studio Code). I had lots of 'lines too lon'g & 'whitespace' errors. I used '\' in my print statements to reduce the line length & I installed a [VS Extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22) that highlights whitespace within the code. Throughout development I have been making tweaks to my code to ensure there are no errors. There are now no errros in my code. View the PEP8 documentation [here](https://peps.python.org/pep-0008/)
+I have used the PEP8 Linter to validate my code. It is activated within my code editor (Visual Studio Code). I had lots of 'lines too lon'g & 'whitespace' errors. I used backslashes in my print statements to reduce the line length & I installed a [VS Extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22) that highlights whitespace within the code. Throughout development I have been making tweaks to my code to ensure there are no errors. There are now no errros in my code. View the PEP8 documentation [here](https://peps.python.org/pep-0008/)
 
 ## Manual Testing
 | Feature                 | Expect                                                 | Action             | Result            |
 | -------------           | -------------                                          | ------------------ | -------           |
-| View Users           | list of all the current users in the users.txt file should be displayed  | "User enters option "1" from the main menu. Clicks return| All users in the system are displayed|
-| Add user - overdraft 'yes' | adds new user to the system with details user provided. New users balance should be 10  | "User enters option "2" from the main menu. Clicks return. Enter First Name - Lewis. Enter Last Name - Hamilton. Enters Seat Number - 5. Chooses Overdraft Facility - y. Clicks Return| User is successfully added to the system. |
+| View Users           | list of all the current users in the users.txt file should be displayed  | User enters option "1" from the main menu. Clicks return| All users in the system are displayed|
+| Add user - overdraft 'yes' | adds new user to the system with details user provided. New users balance should be 10  | User enters option "2" from the main menu. Clicks return. Enter First Name - Lewis. Enter Last Name - Hamilton. Enters Seat Number - 5. Chooses Overdraft Facility - y. Clicks Return| User is successfully added to the system. |
 | Add user - overdraft 'no' | adds new user to the system with details user provided. New users balance should be 20  | User enters option "2" from the main menu. Clicks return. Enter First Name - Fernando. Enter Last Name - Alonso. Enters Seat Number - 7. Chooses Overdraft Facility - n. Clicks Return| User is successfully added to the system. |
 | Add user - first name field blank | user should not be added to the system as first name field is left blank  | User enters option "2" from the main menu. Clicks return. Enter First Name - "". Enter Last Name - Derby. Enters Seat Number - 12. Chooses Overdraft Facility - n. Clicks Return| Error message displayed informing user fields cannot be left blank |
 | Add user - last name field blank | user should not be added to the system as last name field is left blank  | User enters option "2" from the main menu. Clicks return. Enter First Name - Paul. Enter Last Name - "". Enters Seat Number - 3. Chooses Overdraft Facility - n. Clicks Return| Error message displayed informing user fields cannot be left blank |
@@ -195,20 +195,20 @@ I have used the PEP8 Linter to validate my code. It is activated within my code 
 * When I completed writing an if else statement, I did not unindent my code & was writing code within the else block. I unindented my code to fix this issue.
 * In the overdraft validation, I was using 'or' instead of 'and' in my if statement. Using 'or' meant that only one conditional needed to be met while an 'and' statement means both conditionals need to be met.
 * Within my while loops, I was using JavaScript syntax of '==' instead of 'is', which is the correct approach in Python. I was also adding redundant brackets to my if statements & while loops.
-* When I called view users function, the data was only visible if I scrolled up in the terminal as the menu was being displayed after the function call. I added an input("return to continue") to the function so the menu would only return when the user was done reading the user list.
+* When I called the view users function, the data was only visible if I scrolled up in the terminal as the menu was being displayed after the function call. I added an input("return to continue") to the function so the menu would only return when the user was done reading the user list.
 * When I was calling my functions, I forgot to add the 'self.' keyword at times.
 * When validating the account number in the search function, I originally called a NameError however this accepted string inputs so I updated it to a ValueError.
 * When trying to use the built in 'cls' function in the OS module, I got an error saying 'cls' was not recognised. After some research I found a solution where I had to alternatively use 'clear'.
 * I needed to add some comments to my commits as my commit messages did not explain all the code written.
-* No error message is displayed when the account number that is receiving transferred tokens is invalid.
+* No error message is displayed when the account number receiving transferred tokens is invalid.
 * Seat number can only be numbers, not accepting strings.
-* When adding a user, first name is accepting special characters such as '@;0#@' etc.
+* When adding a user, first name is accepting special characters such as '@;0#@' etc. I fixed this by creating a list that contains restricted characters and an error is called if the name field contains any of these characters.
 * Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
 ![image](https://user-images.githubusercontent.com/83119583/192360064-9b54a089-e789-43ad-9774-1b5fd64e2066.png)
 
 # **Development Environment**
 ## Dev Structure
-* The first step for this PP3 project was to come up with the project idea. Just a couple weeks prior I was at the Monza Italian Grand Prix & they had a token system in place for purchasing food & drink at the track. I was inspired by this real-world example for my project. I wanted to create a project using an OOP approach as most real-world software & applications use the OOP paradigm.
+* The first step for this PP3 project was to come up with the project idea. Just a couple weeks prior, I attended the Monza Italian Grand Prix & they had a token system in place for purchasing food & drink at the track. I was inspired by this real-world example for my project. I wanted to create a project using an OOP approach as most real-world software & applications use the OOP paradigm.
 * I created some use case diagrams & class diagrams to clarify the different classes I would need to create. I have learned from PP1 that having a good plan before writing any lines of code is critical. I felt I was more productive with my time on this project as I knew the design I wanted to implement and the algorithm I wanted to write.
 * To keep track of what tasks I needed to complete, I used [GitHub Issues](https://github.com/features/issues).
 * I kept a onenote notebook to log all notes, links etc associated with PP3. This help me keep track of what resources I used, feedback from mentor sessions, masterclass notes & bugs tracked throughout the development cycle.
@@ -223,13 +223,13 @@ To use Gitpod, install the Gitpod extension on either Firefox or Chrome. When th
 For this project, I used the Visual Studio IDE. I used the prebuilt python environment provided by Code Instituet to start this project. I clicked the 'use this template' button and named my repository 'Caesar-Cipher'. I then created a Gitpod workspace by clicking the green gitpod button in my [F1-monza-token-system](https://github.com/emmaC11/F1-monza-token-system) repository.
 
 I used the following commands throughout the development of this project:
-* **python3 -run.py**  - This command runs the run.py file so I can see my code in the terminal.
+* **python3 run.py**  - This command runs the run.py file so I can see my code in the terminal.
 * **git add .** - This command adds all the changes that have been in the working directory to the staging area. Ready to be committed.
 * **git commit -m ""** - This command is used to write descriptive messages of what changes have been made to the code and commits the changes to the local repository.
 * **git push** - This command pushes all the committed changes to the Github repository.
 
 ## Deployment to Heroku
-1. If your project contains any external packages, open a new terminal and type 'pip3 freeze > requirements.txt' then save and push the changes.
+1. If your project contains any external packages, open a new terminal within your project and type 'pip3 freeze > requirements.txt' then save and push the changes.
 2. Open [Heroku](https://dashboard.heroku.com/login) & create a free account.
 3. From the dashboard page, click the 'create new app' button.
 4. Create an app name, this must be unique & choose your region (either America or Europe).
@@ -241,7 +241,8 @@ I used the following commands throughout the development of this project:
 10. Click 'connect to  GitHub' & enter the repository name that contains the python code you want to deploy.
 11. To deploy scroll down and click the 'Deploy Branch' button.
 12. When the application has been deployed successfully, Heroku will provide a deployment link underneath the build section.
-**Note** - these steps only work for a Python project that has been generated using the CI Python Essentials Template.
+
+* **Note** - these steps only work for a Python project that has been generated using the CI Python Essentials Template.
 
 ## Run Locally
 1. Locate the [GitHub Repository](https://github.com/emmaC11/F1-monza-token-system).
