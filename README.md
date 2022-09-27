@@ -48,8 +48,16 @@ This application can be used by attendees of the Monza 2022 Italian Grand Prix. 
 ## Diagrams
 Use Case Diagram & Class Diagram developed using [Lucid Chart](https://lucid.app/lucidchart/ae7a1d80-d51b-4265-8c00-f8b68836fd6e/edit?beaconFlowId=C5E6AF6BD782FA24&invitationId=inv_38752bd1-bdde-4c7f-8d8d-eba843da0469&page=0_0#)
 
+## Use Case Diagram
+A use case diagram shows how a system would work when a user (actor) is using the software. A system is what a developer is developing, it can be an app, website, or business idea. In a use case diagram, a system is represented as a square with the name of the system (title) at the top.
+An actor is someone who is going to use the application, represented as a stick figure. There are primary and secondary actors. Primary actors initiate the use of the system. Secondary actors are reactionary to the primary actors. Primary actors are located outside the system to the left, and secondary actors are positioned to the right. In the banking application, the user is a primary actor and the bank is a secondary actor.
+A use case represents an action that accomplishes a task within the system, a use case is represented by an oval.
+A relationship is how our actors interact with the use cases within the system. Actors and use cases have associations, connected by a straight line. All actors need at least one association with a use case.
+
 ![image](https://user-images.githubusercontent.com/83119583/190186382-ef471d0b-9346-41c2-a67d-67e62e8f1a7b.png)
 
+## Class Diagram
+A class diagram is a diagram that describes the structure of a system by showing the classes contained in a system with their attributes and methods. It helps developers understand the process of the system and how classes interact with each other. A class diagram consists of classes and relationships between the classes. A class may have a relationship with one or more classes in the system
 ![image](https://user-images.githubusercontent.com/83119583/190193272-6e2637eb-d03e-45dd-99eb-7ec7142cb6d2.png)
 
 # **Features**
