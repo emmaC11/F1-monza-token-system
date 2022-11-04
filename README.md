@@ -34,6 +34,7 @@ This application can be used by attendees of the Monza 2022 Italian Grand Prix. 
     * [Technologies Used](#technologies-used)
     * [Code](#code)
     * [Achknowledgements](#achknowledgements)
+    * [Grade](#grade)
 
 # **User Experience & Functionality**
 
@@ -281,6 +282,9 @@ I used the following commands throughout the development of this project:
 ## Achknowledgements
 I would like to thank my mentor Ronan for his guidance throughout my project.
 I would also like to thank Richard for his masterclasses & my classmate Grainne for her helpful input.
+
+## Grade
+This project has achieved a Distinction grade.
 
 
 
